@@ -1750,6 +1750,8 @@ img.rolling_hangimg {
     background-color: #1E1E1E;
     font-size: 18px;
     color: #dfdfdf;
+    padding: 10px;
+    padding-top:1px;
 }
 
 .swiftAns {
@@ -1758,6 +1760,8 @@ img.rolling_hangimg {
     background-color: #636465;
     font-size: 18px;
     color: #dfdfdf;
+    padding: 10px;
+    padding-top: 1px;
 }
 
     .swiftly .method, .swiftAns .method {
@@ -1784,8 +1788,12 @@ img.rolling_hangimg {
         color: #C586C0;
     }
 
-    .swiftly .comment, .swiftAns .comment {
+    .swiftly .comment {
         color: #6A9955;
+    }
+
+    .swiftAns .comment {
+        color: #6Ab955;
     }
 
     .swiftly .namespace, .swiftAns .namespace {
@@ -1814,7 +1822,8 @@ img.rolling_hangimg {
     }
 
     .swiftly Table, .swiftAns Table {
-        padding-top: -10px !important;
+        margin-top: -8px !important;
+        margin-bottom: -8px !important;
         white-space: pre;
     }
 
