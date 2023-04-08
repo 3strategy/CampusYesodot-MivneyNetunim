@@ -853,16 +853,16 @@ div.box_content {
 }
 
 /* code design */
-div.code, div.code_heb {
+/*div.code, div.code_heb {
     border: 2px solid;
     border-color: var(--color1);
     background-color: var(--color9);
     color: var(--color6);
-    padding: 10px; /*20px;*/
-    font-size: 16px;
+    padding: 10px;*/ /*20px;*/
+    /*font-size: 16px;
     line-height: 21px;
-    width: 100%; /*75%;*/
-    margin: auto;
+    width: 100%;*/ /*75%;*/
+    /*margin: auto;
     margin-bottom: 30px;
     position: relative;
 }
@@ -919,76 +919,8 @@ span.code_input {
 div.hiddencode {
     display: none;
     font-family: monospace;
-}
+}*/
 
-/* code design */
-div.code, div.code_heb {
-    border: 2px solid;
-    border-color: var(--color1);
-    background-color: var(--color9);
-    color: var(--color6);
-    padding: 8px; /*20px;*/
-    font-size: 16px;
-    line-height: 21px;
-    width: 100%; /*75%;*/
-    margin: auto;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-div.code, span.code {
-    direction: ltr;
-    text-align: left;
-    font-family: monospace;
-}
-
-div.code_heb, span.code_function_heb {
-    direction: rtl;
-    text-align: right;
-    font-family: Courier,Monospace;
-    font-weight: bold;
-    letter-spacing: -0.7px;
-}
-
-span.code_function_heb {
-    color: var(--code_purple);
-}
-
-p.code_indent {
-    font-family: monospace;
-    margin: 0;
-    padding-left: 2em;
-}
-
-span.code_comment {
-    font-family: monospace;
-    color: var(--code_green);
-}
-
-span.code_answer {
-    font-family: monospace;
-    color: var(--code_blue);
-}
-
-span.code_error {
-    font-family: monospace;
-    color: var(--code_red);
-}
-
-span.code_function {
-    font-family: monospace;
-    color: var(--code_purple);
-}
-
-span.code_input {
-    font-family: monospace;
-    color: var(--code_orange);
-}
-
-div.hiddencode {
-    display: none;
-    font-family: monospace;
-}
 
 /* CODE */
 div.code {
@@ -997,7 +929,7 @@ div.code {
     color: var(--color2);
     font-size: 16px;
     line-height: 18px;
-    width: 100%; /*80%;*/
+    width: 90%; /*80%;*/
     margin: auto;
     margin-bottom: 30px;
     direction: ltr;
@@ -1752,6 +1684,7 @@ img.rolling_hangimg {
     color: #dfdfdf;
     padding: 10px;
     padding-top:1px;
+    width: 100%;
 }
 
 .swiftAns {
