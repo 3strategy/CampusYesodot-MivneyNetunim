@@ -858,10 +858,10 @@ div.code, div.code_heb {
     border-color: var(--color1);
     background-color: var(--color9);
     color: var(--color6);
-    padding: 10px;/*20px;*/
+    padding: 10px; /*20px;*/
     font-size: 16px;
     line-height: 21px;
-    width: 100%;/*75%;*/
+    width: 100%; /*75%;*/
     margin: auto;
     margin-bottom: 30px;
     position: relative;
@@ -927,10 +927,10 @@ div.code, div.code_heb {
     border-color: var(--color1);
     background-color: var(--color9);
     color: var(--color6);
-    padding: 8px;/*20px;*/
+    padding: 8px; /*20px;*/
     font-size: 16px;
     line-height: 21px;
-    width: 100%;/*75%;*/
+    width: 100%; /*75%;*/
     margin: auto;
     margin-bottom: 30px;
     position: relative;
@@ -997,7 +997,7 @@ div.code {
     color: var(--color2);
     font-size: 16px;
     line-height: 18px;
-    width: 100%;/*80%;*/
+    width: 100%; /*80%;*/
     margin: auto;
     margin-bottom: 30px;
     direction: ltr;
@@ -1748,7 +1748,7 @@ img.rolling_hangimg {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #1E1E1E;
-    font-size:18px;
+    font-size: 18px;
     color: #dfdfdf;
 }
 
@@ -1823,20 +1823,20 @@ img.rolling_hangimg {
         padding: 0px !important;
     }
 
-    .swiftly .line_no::before {
-        content: attr(line_no);
-        color: dimgray;
-        width: 0.2em;
-    }
+.swiftly .line_no::before {
+    content: attr(line_no);
+    color: dimgray;
+    width: 0.2em;
+}
 
-    .swiftAns .line_no::before {
-        content: attr(line_no);
-        color:cadetblue;
-        width: 0.2em;
-    }
+.swiftAns .line_no::before {
+    content: attr(line_no);
+    color: cadetblue;
+    width: 0.2em;
+}
 
-    .swiftly .code_column, .swiftAns .code_column {
-        padding-left: 5px;
-        color: #dfdfdf;
-    }
+.swiftly .code_column, .swiftAns .code_column {
+    padding-left: 5px;
+    color: #dfdfdf;
+}
 /*#endregion Code Coloring Swiftly nuget*/
