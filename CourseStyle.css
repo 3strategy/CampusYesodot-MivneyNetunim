@@ -1449,70 +1449,6 @@ body .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
     background-color: #C7FBB2;
 }
 
-/*#############
-CODE COLORING classes for HtmlSyntaxHighLighterDotNet
-#############*/
-    .HtmlSyntaxHighlighterDotNet {
-        direction: ltr;
-        background-color: rgb(0, 0, 0);
-        color: white;
-        font-family: consolas, monospace;
-        font-size: 18px;
-        font-weight: normal;
-        overflow: auto;
-    }
-
-    /*Comments #57A64A;*/
-    .HtmlSyntaxHighlighterDotNet .co {
-        color: #57A64A;
-    }
-    /*keywords such as class public private static and system types int bool etc#569CD6;*/
-    .HtmlSyntaxHighlighterDotNet .k {
-        color: #569CD6;
-    }
-    /*some keywords (e.g. using, return) #C586C0;*/
-    .HtmlSyntaxHighlighterDotNet .k.sta {
-        color: #C586C0;
-    }
-    /*object identifier #9CDCFE;*/
-    .HtmlSyntaxHighlighterDotNet .id {
-        color: #9CDCFE;
-    }
-
-    /*types class names etc #4EC9B0;*/
-    .HtmlSyntaxHighlighterDotNet .id.ty {
-        color: #4EC9B0;
-    }
-    /*most function calls command declarations #DCDCAA;*/
-    .HtmlSyntaxHighlighterDotNet .id.inv {
-        color: #DCDCAA;
-    }
-    /*methods (functions) #DCDCAA;*/
-    .HtmlSyntaxHighlighterDotNet .id.m {
-        color: #DCDCAA;
-    }
-    /*namespace #4EC9B0;*/
-    .HtmlSyntaxHighlighterDotNet .id.ns {
-        color: #4EC9B0;
-    }
-
-    /*stuff after using #4EC9B0;*/
-    .HtmlSyntaxHighlighterDotNet .id.u {
-        color: #4EC9B0;
-    }
-
-    .HtmlSyntaxHighlighterDotNet .id.v {
-        color: #569CD6;
-    }
-
-    .HtmlSyntaxHighlighterDotNet .n {
-        color: #B8D7A3;
-    }
-    /*strings #D69D85*/
-    .HtmlSyntaxHighlighterDotNet .str {
-        color: #D69D85;
-    }
-
 /*##############
  CODE COLORING classes for SwiftlyCodeHtml
     ############*/
@@ -1520,7 +1456,6 @@ CODE COLORING classes for HtmlSyntaxHighLighterDotNet
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #1E1E1E;
-    /*font-size: 18px;*/
     color: #dfdfdf;
 }
 
@@ -1528,7 +1463,6 @@ CODE COLORING classes for HtmlSyntaxHighLighterDotNet
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #636465;
-  /*  font-size: 18px;*/
     color: #dfdfdf;
 }
 
@@ -1588,7 +1522,6 @@ CODE COLORING classes for HtmlSyntaxHighLighterDotNet
     .swiftly Table, th, td, tr, .swiftAns Table, th, td, tr {
         border: none !important;
         padding: 0px !important;
-   /*     font-size: 18px !important;*/
     }
 
     .swiftly .line_no::before {
