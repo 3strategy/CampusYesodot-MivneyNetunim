@@ -1449,9 +1449,310 @@ body .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
     background-color: #C7FBB2;
 }
 
-/*##############
- CODE COLORING classes for SwiftlyCodeHtml
-    ############*/
+/*#region 371CourseCompatiblityAndImg*/
+/*  #########################################
+    Images that we should store on שרת רינת for compatiblity between the 2-4 courses.
+    The stuff below is for more compatibility with sections from oter courses such as Math 371, Self etc...
+    ########################################
+*/
+/* Corner - Iquestion */
+img.corner_iquestion-icon {
+    margin-right: 60px;
+    margin-bottom: -20px;
+    width: 35px;
+    height: 35px;
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_iquestion.png);
+}
+
+div.corner_iquestion-box {
+    font-family: Arial;
+    margin-right: 75px;
+    margin-top: -2px;
+    padding: 16px;
+    border-right: 3px solid var(--color22);
+}
+
+input.corner_iquestion-radio {
+    margin-top: 10px;
+}
+
+div.corner_iquestion-title {
+    border-bottom: 2px solid var(--color9);
+    padding-bottom: 10px;
+}
+
+div.corner_iquestion-feedback {
+    border-bottom: 2px solid var(--color9);
+    /* text-indent: 15px; */
+}
+
+span.corner_iquestion-i_answer, span.corner_iquestion-c_answer {
+    display: none;
+    padding-bottom: 10px;
+    margin-right: 48px;
+    margin-left: 33px;
+}
+
+span.corner_iquestion-i_answer {
+    color: var(--icon_color1);
+}
+
+span.corner_iquestion-c_answer {
+    color: var(--icon_color3);
+}
+
+label.corner_iquestion-option {
+    cursor: pointer;
+}
+
+img.corner_iquestion-x {
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right: -25px;
+    margin-top: 15px;
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_iquestion-x.png);
+}
+
+img.icon_reward {
+    width: 51px;
+    height: 66px;
+    float: right;
+    overflow: auto;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    margin-top: 8px;
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_reward.png);
+}
+
+/* revealing code button */
+img.enterbutton {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/enter.png);
+    border: 0px;
+    width: 75px;
+    /*    height: 25px; */ /*deleted for Edx */
+    /*    margin-top: -10px;*/ /*deleted for Edx */
+    /*    padding-bottom: 16px; */ /*deleted for Edx */
+}
+
+    img.enterbutton:hover {
+        filter: invert(100%);
+    }
+
+
+/* corners */
+img.corner_debug-icon, img.corner_enrichment-icon, img.corner_goodwrite-icon, img.corner_otherlang-icon {
+    margin-right: 40px;
+    margin-bottom: -8px;
+    max-width: 70px !important;
+    height: 70px;
+}
+
+img.corner_debug-icon {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_debug.png);
+}
+
+img.corner_enrichment-icon {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_enrichment.png);
+}
+
+img.corner_goodwrite-icon {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_goodwrite.png);
+}
+
+img.corner_otherlang-icon {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_otherlang.png);
+}
+
+img.corner_debug-icon:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_debug-h.png);
+}
+
+img.corner_enrichment-icon:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_enrichment-h.png);
+}
+
+img.corner_goodwrite-icon:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_goodwrite-h.png);
+}
+
+img.corner_otherlang-icon:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_otherlang-h.png);
+}
+
+span.corner_debug-title, span.corner_enrichment-title, span.corner_goodwrite-title, span.corner_otherlang-title {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+span.corner_debug-title {
+    color: var(--icon_color1);
+}
+
+span.corner_enrichment-title {
+    color: var(--icon_color4);
+}
+
+span.corner_goodwrite-title {
+    color: var(--icon_color3);
+}
+
+span.corner_otherlang-title {
+    color: var(--icon_color2);
+}
+
+span.corner_title {
+    cursor: pointer;
+    display: block;
+}
+
+.explainHidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden !important;
+}
+
+span.corner_continue {
+    font-family: Arial;
+    font-size: 16px;
+    color: var(--color8);
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+    span.corner_continue:hover {
+        color: var(--color1);
+    }
+
+div.corner_goodwrite-box {
+    display: block;
+}
+
+div.corner_debug-box, div.corner_enrichment-box, div.corner_goodwrite-box, div.corner_otherlang-box {
+    display: block;
+    font-family: Arial;
+    margin-right: 75px;
+    margin-top: 7px; /* added to edex */
+    padding: 16px;
+}
+
+div.corner_enrichment-box, div.corner_otherlang-box {
+    display: none;
+}
+
+div.corner_debug-box {
+    border-right: 3px solid var(--icon_color1);
+}
+
+div.corner_enrichment-box {
+    border-right: 3px solid var(--icon_color4);
+}
+
+div.corner_goodwrite-box {
+    border-right: 3px solid var(--icon_color3);
+}
+
+div.corner_otherlang-box {
+    border-right: 3px solid var(--icon_color2);
+}
+
+img.corner_debug-x, img.corner_enrichment-x, img.corner_goodwrite-x, img.corner_otherlang-x {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+    margin-right: -32px;
+    margin-top: 15px;
+}
+
+img.corner_debug-x {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_debug-x.png);
+}
+
+img.corner_enrichment-x {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_enrichment-x.png);
+}
+
+img.corner_goodwrite-x {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_goodwrite-x.png);
+}
+
+img.corner_otherlang-x {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_otherlang-x.png);
+}
+
+img.corner_debug-x:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_debug-xh.png);
+}
+
+img.corner_enrichment-x:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_enrichment-xh.png);
+}
+
+img.corner_goodwrite-x:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_goodwrite-xh.png);
+}
+
+img.corner_otherlang-x:hover {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/icon_otherlang-xh.png);
+}
+
+img.box_content_close {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/top.png);
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+
+    img.box_content_close:hover {
+        content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/top-h.png);
+    }
+
+
+img.rolling_icon {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/rolling_assignment/graphics/icon_rolling.png);
+    border: 0px;
+    width: 116px;
+    height: 100px;
+}
+
+img.rolling_hangimg {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/rolling_assignment/graphics/img_r_1.png);
+    float: left;
+    width: 155px;
+    height: 206px;
+    bottom: -200px;
+}
+
+.mashov_circle {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/self.py/base_graphics/icon_certificate.svg);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown_icon {
+    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/self.py/base_graphics/icon_dropdown.svg);
+    margin-left: 4px;
+}
+/*#######################
+  End of self compatiblity 
+  #######################
+*/
+
+/*#endregion RegionName*/
+
+/*#region Code Coloring Swiftly nuget*/
+
 .swiftly {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
@@ -1540,3 +1841,4 @@ body .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
         padding-left: 5px;
         color: #dfdfdf;
     }
+/*#endregion Code Coloring Swiftly nuget*/
