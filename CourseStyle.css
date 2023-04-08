@@ -867,10 +867,10 @@ div.code, div.code_heb {
     border-color: var(--color1);
     background-color: var(--color9);
     color: var(--color6);
-    padding: 20px;
+    padding: 10px;/*20px;*/
     font-size: 16px;
     line-height: 21px;
-    width: 75%;
+    width: 100%;/*75%;*/
     margin: auto;
     margin-bottom: 30px;
     position: relative;
@@ -936,10 +936,10 @@ div.code, div.code_heb {
     border-color: var(--color1);
     background-color: var(--color9);
     color: var(--color6);
-    padding: 20px;
+    padding: 8px;/*20px;*/
     font-size: 16px;
     line-height: 21px;
-    width: 75%;
+    width: 100%;/*75%;*/
     margin: auto;
     margin-bottom: 30px;
     position: relative;
@@ -1006,7 +1006,7 @@ div.code {
     color: var(--color2);
     font-size: 16px;
     line-height: 18px;
-    width: 80%;
+    width: 100%;/*80%;*/
     margin: auto;
     margin-bottom: 30px;
     direction: ltr;
@@ -1448,3 +1448,160 @@ body .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
 .xblock--drag-and-drop .popup {
     background-color: #C7FBB2;
 }
+
+/*#############
+CODE COLORING classes for HtmlSyntaxHighLighterDotNet
+#############*/
+    .HtmlSyntaxHighlighterDotNet {
+        direction: ltr;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-family: consolas, monospace;
+        font-size: 18px;
+        font-weight: normal;
+        overflow: auto;
+    }
+
+    /*Comments #57A64A;*/
+    .HtmlSyntaxHighlighterDotNet .co {
+        color: #57A64A;
+    }
+    /*keywords such as class public private static and system types int bool etc#569CD6;*/
+    .HtmlSyntaxHighlighterDotNet .k {
+        color: #569CD6;
+    }
+    /*some keywords (e.g. using, return) #C586C0;*/
+    .HtmlSyntaxHighlighterDotNet .k.sta {
+        color: #C586C0;
+    }
+    /*object identifier #9CDCFE;*/
+    .HtmlSyntaxHighlighterDotNet .id {
+        color: #9CDCFE;
+    }
+
+    /*types class names etc #4EC9B0;*/
+    .HtmlSyntaxHighlighterDotNet .id.ty {
+        color: #4EC9B0;
+    }
+    /*most function calls command declarations #DCDCAA;*/
+    .HtmlSyntaxHighlighterDotNet .id.inv {
+        color: #DCDCAA;
+    }
+    /*methods (functions) #DCDCAA;*/
+    .HtmlSyntaxHighlighterDotNet .id.m {
+        color: #DCDCAA;
+    }
+    /*namespace #4EC9B0;*/
+    .HtmlSyntaxHighlighterDotNet .id.ns {
+        color: #4EC9B0;
+    }
+
+    /*stuff after using #4EC9B0;*/
+    .HtmlSyntaxHighlighterDotNet .id.u {
+        color: #4EC9B0;
+    }
+
+    .HtmlSyntaxHighlighterDotNet .id.v {
+        color: #569CD6;
+    }
+
+    .HtmlSyntaxHighlighterDotNet .n {
+        color: #B8D7A3;
+    }
+    /*strings #D69D85*/
+    .HtmlSyntaxHighlighterDotNet .str {
+        color: #D69D85;
+    }
+
+/*##############
+ CODE COLORING classes for SwiftlyCodeHtml
+    ############*/
+.swiftly {
+    direction: ltr;
+    font-family: monaco,Consolas,LucidaConsole,monospace;
+    background-color: #1E1E1E;
+    font-size: 18px;
+    color: #dfdfdf;
+}
+
+.swiftAns {
+    direction: ltr;
+    font-family: monaco,Consolas,LucidaConsole,monospace;
+    background-color: #636465;
+    font-size: 18px;
+    color: #dfdfdf;
+}
+
+    .swiftly .method, .swiftAns .method {
+        color: #DCDCAA;
+    }
+
+    .swiftly .class, .swiftAns .class {
+        color: #4EC9B0;
+    }
+
+    .swiftly .keyword, .swiftAns .keyword {
+        color: #569cd6;
+    }
+
+    .swiftly .string, .swiftAns .string {
+        color: #ce9178;
+    }
+
+    .swiftly .numericLiteral, .swiftAns .numericLiteral {
+        color: #b8d7a3;
+    }
+
+    .swiftly .control, .swiftAns .control {
+        color: #C586C0;
+    }
+
+    .swiftly .namespace, .swiftAns .namespace {
+        color: #dfdfdf;
+    }
+
+    .swiftly .punctuation, .swiftAns .punctuation {
+        color: #dfdfdf;
+    }
+
+    .swiftly .operator, .swiftAns .operator {
+        color: #dfdfdf;
+    }
+
+    .swiftly .localName, .swiftAns .localName {
+        color: #9CDCFE;
+    }
+
+    .swiftly .parameter, .swiftAns .parameter {
+        color: #9CDCFE;
+    }
+
+    .swiftly .code_highlight, .swiftAns .code_highlight {
+        background-color: #395929;
+    }
+
+    /*table {
+        
+    }*/
+
+    .swiftly Table, .swiftAns Table {
+        padding-top: -10px !important;
+        white-space: pre;
+    }
+
+    .swiftly Table, th, td, tr, .swiftAns Table, th, td, tr {
+        border: none !important;
+        padding: 0px !important;
+        font-size: 18px !important;
+    }
+
+    .swiftly .line_no::before, .swifAns .line_no::before {
+        content: attr(line_no);
+        color: white;
+        width: 0.2em;
+    }
+
+    .swiftly .code_column, .swifAns .code_column {
+        padding-left: 5px;
+        color: #dfdfdf;
+    }
