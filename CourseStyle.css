@@ -1,16 +1,7 @@
-/*@import url(http://fonts.googleapis.com/css?family=Varela+Round);*/
-@font-face {
-    font-family: "Varela-Round";
-    src: url(VARELAROUND-REGULAR.TTF) format("truetype");
-}
-
-@font-face {
-    font-family: "Consolas";
-    src: url(CONSOLA.TTF) format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
-    --font1: "Assistant";
+    --font1: "Varela Round";
     --font2: "Consolas";
 }
 
@@ -816,10 +807,10 @@ mark {
 
 /* Subject box */
 button.box_title {
-    font-family: 'Assistant';
+    font-family: var(--font1);
     font-weight: bold;
     background-image: var(--color20);
-    color: var(--color5);
+    color: var(--color2);
     height: 40px;
     line-height: 39px !important;
     border-top-left-radius: 3px;
@@ -848,7 +839,7 @@ button.box_title {
 div.box_content {
     display: none;
     font-family: Assistant;
-    background: var(--color5);
+    background: var(--color12);
     overflow: hidden;
     padding: 10px;
     font-size: 15px;
@@ -1757,6 +1748,7 @@ img.rolling_hangimg {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #1E1E1E;
+    font-size:18px;
     color: #dfdfdf;
 }
 
@@ -1764,6 +1756,7 @@ img.rolling_hangimg {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #636465;
+    font-size: 18px;
     color: #dfdfdf;
 }
 
@@ -1791,9 +1784,14 @@ img.rolling_hangimg {
         color: #C586C0;
     }
 
+    .swiftly .comment, .swiftAns .comment {
+        color: #6A9955;
+    }
+
     .swiftly .namespace, .swiftAns .namespace {
         color: #dfdfdf;
     }
+
 
     .swiftly .punctuation, .swiftAns .punctuation {
         color: #dfdfdf;
