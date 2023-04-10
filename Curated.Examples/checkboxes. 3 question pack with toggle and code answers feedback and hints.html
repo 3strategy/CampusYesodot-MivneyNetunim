@@ -1,0 +1,88 @@
+﻿<problem>
+    <button class="box_title" aria-expanded="true" onclick="toggle_visibility('topic5')">ענו על 3 השאלות הבאות</button>
+    <div id="topic5">
+        <br />
+        <label>שאלה  ראשונה</label>
+        <!--button class="box_title" aria-expanded="true" onclick="toggle_visibility('topic5')">סמנו את כל ההגדרות החוקיות</button>
+        <div  id="topic5"-->
+
+        <choiceresponse>
+
+            <checkboxgroup>
+                <choice correct="true">
+                    תשובה נכונה
+                    <choicehint selected="true">איזה מלך אתה שבחרת תשובה זו</choicehint>
+                    <choicehint selected="false">בחירה זו אינה נכונה שכן לא מתקיים משהו.</choicehint>
+                </choice>
+                <choice correct="false">תשובה שגוייה1</choice>
+                <choice correct="false">
+                    תשובה שגוייה 2
+                    <choicehint selected="true">הסבר לגבי שגיאה זו</choicehint>
+                    <choicehint selected="false">הסבר לגבי כמה נפלא היה לא לבחור בזו</choicehint>
+                </choice>
+                <choice correct="true">עוד תשובה נכונה</choice>
+                <compoundhint value="A B D">כאן נמצא משוב על הבחירה בתשובות 1,2,4</compoundhint>
+                <compoundhint value="A B C D">וכאן המשוב למי שבחר 1,2,3,4</compoundhint>
+            </checkboxgroup>
+        </choiceresponse>
+
+        <label>שאלה 2</label>
+        <choiceresponse>
+            <checkboxgroup>
+                <choice correct="true">
+                    <div class="code, swiftly">
+                        <pre>
+            a = <span class="keyword">int</span>.<span class="method">Parse</span>(<span class="class">Console</span>.<span class="method">ReadLine</span>());
+        b = <span class="keyword">int</span>.<span class="method">Parse</span>(<span class="class">Console</span>.<span class="method">ReadLine</span>());</pre>
+                    </div>
+
+                    <choicehint selected="true">איזה מלך אתה שבחרת תשובה זו</choicehint>
+                    <choicehint selected="false">בחירה זו אינה נכונה שכן לא מתקיים משהו.</choicehint>
+                </choice>
+                <choice correct="false">תשובה שגוייה1</choice>
+                <choice correct="false">
+                    <div class="code, swiftly">
+                        <pre>
+public static void <span class="method">Eggplant</span><span class="punctuation">()</span></pre>
+                    </div>
+
+                    <choicehint selected="true">הסבר לגבי שגיאה זו</choicehint>
+                    <choicehint selected="false">הסבר לגבי כמה נפלא היה לא לבחור בזו</choicehint>
+                </choice>
+                <choice correct="true">עוד תשובה נכונה</choice>
+                <compoundhint value="A B D">כאן נמצא משוב על הבחירה בתשובות 1,2,4</compoundhint>
+                <compoundhint value="A B C D">וכאן המשוב למי שבחר 1,2,3,4</compoundhint>
+            </checkboxgroup>
+        </choiceresponse>
+
+        <label>שאלה 3</label>
+        <choiceresponse>
+            <checkboxgroup>
+                <choice correct="true">
+                    תשובה נכונה
+                    <choicehint selected="true">איזה מלך אתה שבחרת תשובה זו</choicehint>
+                    <choicehint selected="false">בחירה זו אינה נכונה שכן לא מתקיים משהו.</choicehint>
+                </choice>
+                <choice correct="false">תשובה שגוייה1</choice>
+                <choice correct="false">
+                    תשובה שגוייה 2
+                    <choicehint selected="true">הסבר לגבי שגיאה זו</choicehint>
+                    <choicehint selected="false">הסבר לגבי כמה נפלא היה לא לבחור בזו</choicehint>
+                </choice>
+                <choice correct="true">עוד תשובה נכונה</choice>
+                <compoundhint value="A B D">כאן נמצא משוב על הבחירה בתשובות 1,2,4</compoundhint>
+                <compoundhint value="A B C D">וכאן המשוב למי שבחר 1,2,3,4</compoundhint>
+            </checkboxgroup>
+        </choiceresponse>
+
+
+        <demandhint>
+            <hint>זה אחד הרמזים</hint>
+            <hint>כאן נמצא רמז נוסף</hint>
+            <hint>זה אחד הרמזים</hint>
+            <hint>כאן נמצא רמז נוסף</hint>
+            <hint>זה אחד הרמזים</hint>
+            <hint>כאן נמצא רמז נוסף</hint>
+        </demandhint>
+    </div>
+</problem>
