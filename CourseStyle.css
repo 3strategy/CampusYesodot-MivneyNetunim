@@ -432,6 +432,18 @@ button.submit .submit-label {
 }
 
 
+/* Guy: check box and radio adjustments */
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup label {
+    padding-right: 46px;
+}
+
+.xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="radio"], .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup input[type="checkbox"] {
+    right: 0.45em;
+    top: 0.28em;
+}
+/* end of guy's chagnge */
+
+
 /* drag and drop title */
 
 .xblock--drag-and-drop h3.problem-title {
