@@ -432,7 +432,7 @@ button.submit .submit-label {
 }
 
 
-/* Guy: check box and radio adjustments */
+/* Guy: important check box and radio adjustments */
 .xmodule_display.xmodule_ProblemBlock div.problem .choicegroup label {
     padding-right: 46px;
 }
@@ -1689,25 +1689,31 @@ img.rolling_hangimg {
 
 /*#region Code Coloring Swiftly nuget*/
 
-.swiftly {
+.swiftly pre {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
-    background-color: #1E1E1E;
+    background-color: #1E1E1E !important; /*helps if you want to make it sticky fixedElement*/
     font-size: 18px;
     color: #dfdfdf;
     padding: 10px;
     padding-top:1px;
-    width: 100%;
+    width: 95%;
 }
 
-.swiftAns {
+.fixedElement .swiftly pre {
+    opacity: 1;
+}
+
+.swiftAns pre {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
-    background-color: #636465;
+    background-color: #636465 !important;
+    opacity: 0.9;
     font-size: 18px;
     color: #dfdfdf;
     padding: 10px;
     padding-top: 1px;
+    width: 95%;
 }
 
     .swiftly .method, .swiftAns .method {
@@ -1768,8 +1774,8 @@ img.rolling_hangimg {
     }
 
     .swiftly Table, .swiftAns Table {
-        margin-top: -8px !important;
-        margin-bottom: -8px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
         white-space: pre;
     }
 

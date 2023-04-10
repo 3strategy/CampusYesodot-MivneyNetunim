@@ -1,0 +1,28 @@
+﻿<!--This example includes calling a script though 
+    this kind of page should be added as a new PROBLEM
+    page and not raw html.
+    Then the view should be switched to advanced
+    and then you can paste this code-->
+<problem>
+    <choiceresponse>
+        <button class="box_title" aria-expanded="true" onclick="toggle_visibility('topic4')">סמנו את כל ההגדרות החוקיות</button>
+        <div id="topic4">
+            <checkboxgroup>
+                <choice correct="true">
+                    <div class="code, swiftly">
+                        <pre>
+public static void <span class="method">Eggplant</span><span class="punctuation">()</span></pre>
+                    </div>
+                </choice>
+                <choice correct="false">
+                    <div class="code, swiftly">
+                        <pre>
+            a = <span class="keyword">int</span>.<span class="method">Parse</span>(<span class="class">Console</span>.<span class="method">ReadLine</span>());
+        b = <span class="keyword">int</span>.<span class="method">Parse</span>(<span class="class">Console</span>.<span class="method">ReadLine</span>());</pre>
+                    </div>
+                </choice>
+                <choice correct="false">an incorrect answer</choice>
+            </checkboxgroup>
+        </div>
+    </choiceresponse>
+</problem>
