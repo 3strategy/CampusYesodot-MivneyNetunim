@@ -838,6 +838,7 @@ button.box_title {
     text-align: right;
     cursor: pointer;
     outline: none;
+    text-shadow:none;
 }
 
 
