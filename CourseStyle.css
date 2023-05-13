@@ -941,8 +941,8 @@ div.code {
     border: none;
     background-color: var(--color3);
     color: var(--color2);
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 16px; /*has no effect. */
+    line-height: 18px; 
     width: 90%; /*80%;*/
     margin: auto;
     margin-bottom: 30px;
@@ -1690,14 +1690,14 @@ img.rolling_hangimg {
 
 /*#region Code Coloring Swiftly nuget*/
 
-.swiftly pre {
+div.code.swiftly pre, div.code.swiftly pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
-    background-color: #1E1E1E !important; /*helps if you want to make it sticky fixedElement*/
-    font-size: 18px;
+    background-color: #050505 !important; /*helps if you want to make it sticky fixedElement*/
+    font-size: 17px;
     color: #dfdfdf;
     padding: 10px;
-    padding-top:1px;
+    padding-top: 1px;
     width: 95%;
 }
 
@@ -1705,7 +1705,7 @@ img.rolling_hangimg {
     opacity: 1;
 }
 
-.swiftAns pre {
+div.code.swiftAns pre, div.code.swiftAns pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #636465 !important;
@@ -1788,12 +1788,14 @@ img.rolling_hangimg {
 .swiftly .line_no::before {
     content: attr(line_no);
     color: dimgray;
+    font-size:16px;
     width: 0.2em;
 }
 
 .swiftAns .line_no::before {
     content: attr(line_no);
     color: cadetblue;
+    font-size: 16px;
     width: 0.2em;
 }
 
