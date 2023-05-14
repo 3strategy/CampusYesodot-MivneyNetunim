@@ -935,17 +935,17 @@ div.hiddencode {
     font-family: monospace;
 }*/
 
-
+/* this also has effect on current formatting*/
 /* CODE */
 div.code {
     border: none;
     background-color: var(--color3);
     color: var(--color2);
-    font-size: 16px; /*has no effect. */
+    font-size: 16px; /* is overridden in lined number cases */
     line-height: 18px; 
     width: 90%; /*80%;*/
     margin: auto;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px; bad impact on inline code inside choices of answers */
     direction: ltr;
     text-align: left;
     font-family: var(--font2);
@@ -1690,17 +1690,26 @@ img.rolling_hangimg {
 
 /*#region Code Coloring Swiftly nuget*/
 
-div.code.swiftly pre, div.code.swiftly pre .code_column {
+div.code.swiftly pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #050505 !important; /*helps if you want to make it sticky fixedElement*/
-    font-size: 17px;
+    font-size: 17px !important;
     color: #dfdfdf;
     padding: 10px;
     padding-top: 1px;
     width: 95%;
 }
-
+div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
+    direction: ltr;
+    font-family: monaco,Consolas,LucidaConsole,monospace;
+    background-color: #050505 !important;
+    font-size: 17px !important;
+    color: #dfdfdf;
+    border: none !important; /*to avoid conflict with coices.*/
+    text-shadow: none !important;
+    padding: 0px !important;
+}
 .fixedElement .swiftly pre {
     opacity: 1;
 }
