@@ -1689,7 +1689,9 @@ img.rolling_hangimg {
 /*#endregion RegionName*/
 
 /*#region Code Coloring Swiftly nuget*/
-
+pre {
+    margin: 0px;
+}
 div.code.swiftly pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
