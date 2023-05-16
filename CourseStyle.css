@@ -838,7 +838,7 @@ button.box_title {
     text-align: right;
     cursor: pointer;
     outline: none;
-    text-shadow:none;
+    text-shadow: none;
 }
 
 
@@ -873,10 +873,10 @@ div.box_content {
     background-color: var(--color9);
     color: var(--color6);
     padding: 10px;*/ /*20px;*/
-    /*font-size: 16px;
+/*font-size: 16px;
     line-height: 21px;
     width: 100%;*/ /*75%;*/
-    /*margin: auto;
+/*margin: auto;
     margin-bottom: 30px;
     position: relative;
 }
@@ -942,7 +942,7 @@ div.code {
     background-color: var(--color3);
     color: var(--color2);
     font-size: 16px; /* is overridden in lined number cases */
-    line-height: 18px; 
+    line-height: 18px;
     width: 90%; /*80%;*/
     margin: auto;
     /*margin-bottom: 30px; bad impact on inline code inside choices of answers */
@@ -950,7 +950,9 @@ div.code {
     text-align: left;
     font-family: var(--font2);
 }
-
+div.problem div.code {
+    width: auto;
+}
 
 .code_explenation span.code_builtin, .code span.code_builtin {
     color: deepskyblue;
@@ -1692,6 +1694,7 @@ img.rolling_hangimg {
 pre {
     margin: 0px;
 }
+
 div.code.swiftly pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
@@ -1702,6 +1705,7 @@ div.code.swiftly pre .code_column {
     padding-top: 1px;
     width: 95%;
 }
+
 div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
@@ -1712,6 +1716,7 @@ div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
     text-shadow: none !important;
     padding: 0px !important;
 }
+
 .fixedElement .swiftly pre {
     opacity: 1;
 }
@@ -1728,78 +1733,78 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
     width: 95%;
 }
 
-    .swiftly .method, .swiftAns .method {
-        color: #DCDCAA;
-    }
+.swiftly .method, .swiftAns .method {
+    color: #DCDCAA;
+}
 
-    .swiftly .class, .swiftAns .class {
-        color: #4EC9B0;
-    }
+.swiftly .class, .swiftAns .class {
+    color: #4EC9B0;
+}
 
-    .swiftly .keyword, .swiftAns .keyword {
-        color: #569cd6;
-    }
+.swiftly .keyword, .swiftAns .keyword {
+    color: #569cd6;
+}
 
-    .swiftly .string, .swiftAns .string {
-        color: #ce9178;
-    }
+.swiftly .string, .swiftAns .string {
+    color: #ce9178;
+}
 
-    .swiftly .numericLiteral, .swiftAns .numericLiteral {
-        color: #b8d7a3;
-    }
+.swiftly .numericLiteral, .swiftAns .numericLiteral {
+    color: #b8d7a3;
+}
 
-    .swiftly .control, .swiftAns .control {
-        color: #C586C0;
-    }
+.swiftly .control, .swiftAns .control {
+    color: #C586C0;
+}
 
-    .swiftly .comment {
-        color: #6A9955;
-    }
+.swiftly .comment {
+    color: #6A9955;
+}
 
-    .swiftAns .comment {
-        color: #6Ab955;
-    }
+.swiftAns .comment {
+    color: #6Ab955;
+}
 
-    .swiftly .namespace, .swiftAns .namespace {
-        color: #dfdfdf;
-    }
+.swiftly .namespace, .swiftAns .namespace {
+    color: #dfdfdf;
+}
 
 
-    .swiftly .punctuation, .swiftAns .punctuation {
-        color: #dfdfdf;
-    }
+.swiftly .punctuation, .swiftAns .punctuation {
+    color: #dfdfdf;
+}
 
-    .swiftly .operator, .swiftAns .operator {
-        color: #dfdfdf;
-    }
+.swiftly .operator, .swiftAns .operator {
+    color: #dfdfdf;
+}
 
-    .swiftly .localName, .swiftAns .localName {
-        color: #9CDCFE;
-    }
+.swiftly .localName, .swiftAns .localName {
+    color: #9CDCFE;
+}
 
-    .swiftly .parameter, .swiftAns .parameter {
-        color: #9CDCFE;
-    }
+.swiftly .parameter, .swiftAns .parameter {
+    color: #9CDCFE;
+}
 
-    .swiftly .code_highlight, .swiftAns .code_highlight {
-        background-color: #395929;
-    }
+.swiftly .code_highlight, .swiftAns .code_highlight {
+    background-color: #395929;
+}
 
-    .swiftly Table, .swiftAns Table {
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-        white-space: pre;
-    }
+.swiftly Table, .swiftAns Table {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    white-space: pre;
+}
 
-    .swiftly Table, th, td, tr, .swiftAns Table, th, td, tr {
-        border: none !important;
-        padding: 0px !important;
-    }
+.swiftly Table, th, td, tr, .swiftAns Table, th, td, tr {
+    border: none !important;
+    padding: 0px !important;
+}
 
 .swiftly .line_no::before {
     content: attr(line_no);
     color: dimgray;
-    font-size:16px;
+    font-size: 16px;
     width: 0.2em;
 }
 
