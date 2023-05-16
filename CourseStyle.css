@@ -1759,10 +1759,12 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 
 .swiftly .comment {
     color: #6A9955;
+    font-family: var(--font1);
 }
 
 .swiftAns .comment {
-    color: #6Ab955;
+    color: #7Ad965;
+    font-family: var(--font1);
 }
 
 .swiftly .namespace, .swiftAns .namespace {
