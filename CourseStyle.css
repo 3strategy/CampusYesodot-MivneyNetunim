@@ -30,6 +30,7 @@
     --color23: #023852; /* text       - dark blue */
     --color25: #3B364B; /*border of jumping explanation*/
     --color26: #40305F; /*backgorund of jumping explanation*/
+    --color27: #1c8da4; /* semi-light blue YESODOT*/
     --icon_color1: #ef7777; /* icon: debug      - red    */
     --icon_color2: #BA8900; /* icon: enrichment - yellow */
     --icon_color3: #49D682; /* icon: correctwr  - green  */
@@ -157,7 +158,7 @@ button.active span.icon {
 
 nav.course-navigation span.group-heading {
     background-color: #f8f7f7;
-    color: #1c8da4;
+    color: var(--color27);
     margin-top: 3px;
     margin-bottom: 3px;
     font-family: "Assistant";
@@ -218,7 +219,7 @@ p.accordion-display-name {
 .course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item:nth-child(22) a,
 .course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item:nth-child(23) a {
     border-radius: 0;
-    color: #1c8da4 !important;
+    color: var(--color27) !important;
     font-size: 1.3em !important;
     padding: 1em !important;
     /* pointer-events: none; */
@@ -245,7 +246,7 @@ p.accordion-display-name {
 
 .course-index .accordion .course-navigation .button-chapter.active .group-heading {
     color: white;
-    background-color: #1c8da4;
+    background-color: var(--color27);
 }
 
 
@@ -301,19 +302,19 @@ div#seq_content {
 }
 
 h2.unit-title {
-    color: #1c8da4 !important;
+    color: var(--color27) !important;
     font-family: "Assistant";
     font-size: 2rem !important;
 }
 
 .xmodule_display.xmodule_HtmlModule h2.unit-title {
-    color: #1c8da4 !important;
+    color: var(--color27) !important;
     font-family: "Assistant" !important;
     font-size: 1.7rem !important;
 }
 
 h2.unit-title2 {
-    color: #1c8da4 !important;
+    color: var(--color27) !important;
     font-family: "Assistant" !important;
     font-size: 1.7rem !important;
     font-weight: 300 !important;
@@ -322,7 +323,7 @@ h2.unit-title2 {
 button.submit {
     font-family: "Assistant";
     color: white;
-    background: #1c8da4;
+    background: var(--color27);
     border-radius: 5px;
     padding: 0.325rem 1.3rem;
 }
@@ -375,7 +376,7 @@ button.submit {
 
 .problem-header {
     font-family: "Assistant";
-    color: #1c8da4;
+    color: var(--color27);
     font-size: 1.4rem;
     margin-right: 2.2% !important;
 }
@@ -458,7 +459,7 @@ button.submit .submit-label {
 /* DRAG drop Question*/
 
 .xblock--drag-and-drop .btn-brand {
-    border-color: #1c8da4;
+    border-color: var(--color27);
     border-width: 2px;
     font-family: "Assistant";
     color: white;
@@ -470,7 +471,7 @@ button.submit .submit-label {
 .xblock--drag-and-drop .btn-brand {
     font-family: "Assistant";
     font-size: 130%;
-    color: #1c8da4;
+    color: var(--color27);
 }
 
     .xblock--drag-and-drop .btn-brand:hover {
@@ -478,7 +479,7 @@ button.submit .submit-label {
     }
 
 .xblock--drag-and-drop .drag-container .option {
-    background-color: #1c8da4;
+    background-color: var(--color27);
 }
 
     .xblock--drag-and-drop .drag-container .option .item-content {
@@ -615,7 +616,7 @@ div.problem div.wrapper-problem-response p {
 }
 
     .xmodule_display.xmodule_HtmlModule table th {
-        background-color: #1c8da4;
+        background-color: var(--color27);
         color: white;
         font-size: 100%;
     }
@@ -674,7 +675,7 @@ table audio {
 }
 
 solution > div {
-    border: 2px solid #1c8da4;
+    border: 2px solid var(--color27);
     padding: 20px;
     background-image: url("/static/bg1.jpg");
     background-color: #fff;
@@ -687,7 +688,7 @@ solution > div {
     solution > div > h2 {
         color: #fff;
         padding: 10px !important;
-        background-color: #1c8da4;
+        background-color: var(--color27);
         margin: -20px -20px 30px -20px !important;
     }
 
@@ -696,7 +697,7 @@ solution h3 {
     font-weight: bold;
     font-family: "Assistant";
     font-size: 1.2em;
-    background: #1c8da4;
+    background: var(--color27);
     padding: 2px 10px 5px 10px;
     margin-right: -20px;
     padding-right: 15px;
@@ -713,8 +714,8 @@ solution h3 {
     margin-left: 4px;
     max-width: 110px;
     margin-bottom: 19px !important;
-    border: solid 2px #1c8da4;
-    color: #1c8da4;
+    border: solid 2px var(--color27);
+    color: var(--color27);
 }
 
     .xmodule_display.xmodule_CapaModule div.problem .action .problem-action-btn .icon {
@@ -727,7 +728,7 @@ solution h3 {
 
 .xmodule_display.xmodule_CapaModule div.problem div p.answer {
     margin-top: 0;
-    color: #1c8da4;
+    color: var(--color27);
 }
 
 
@@ -1312,10 +1313,14 @@ sup {
 p {
     color: black;
 }
-
-.hd .hd-3 .problem-header {
-    font-size: 19.px;
-    columns: black;
+/* guy this is quite important and somehow contained invalid properties*/
+/*.hd .hd-3 .problem-header*/
+.hd.hd-3.problem-header, h3.problem-title {
+    /*    font-size: 19.px;
+    columns: black;*/
+    font-size: 22px;
+    color: var(--color27);
+    font-weight: bold;
     font-weight: bold;
 }
 
