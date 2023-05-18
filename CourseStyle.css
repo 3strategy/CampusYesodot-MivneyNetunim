@@ -30,7 +30,9 @@
     --color23: #023852; /* text       - dark blue */
     --color25: #3B364B; /*border of jumping explanation*/
     --color26: #40305F; /*backgorund of jumping explanation*/
-    --color27: #1c8da4; /* semi-light blue YESODOT*/
+    --color27: #1c8da4; /* semi-light blue YESODOT/MivneyN*/
+    --color28: #1c8da4; /* semi-light blue Prolems headers and titles or
+        OR, RED RED RED for Testing YESODOT/MivneyN*/
     --icon_color1: #ef7777; /* icon: debug      - red    */
     --icon_color2: #BA8900; /* icon: enrichment - yellow */
     --icon_color3: #49D682; /* icon: correctwr  - green  */
@@ -374,13 +376,6 @@ button.submit {
     font-family: "Assistant";
 }
 
-.problem-header {
-    font-family: "Assistant";
-    color: var(--color27);
-    font-size: 1.4rem;
-    margin-right: 2.2% !important;
-}
-
 .wrapper-problem-response input {
     font-family: "Assistant";
     font-size: 115%;
@@ -442,17 +437,61 @@ button.submit .submit-label {
     right: 0.45em;
     top: 0.28em;
 }
-/* end of guy's chagnge */
 
+/*add 38px question icon to problems*/
+.problem-header {
+    font-family: "Assistant";
+    color: var(--color28);
+    font-size: 1.44rem;
+    font-weight: bold;
+    margin-right: 2.2% !important;
+}
+
+.hd.hd-3.problem-header::before {
+    content: url(question_icon38.png);
+    height: 38px;/*actual image size*/
+    width: 35px; /*use width to add space between image and text*/
+    float: right;
+}
+.xblock--drag-and-drop h3.problem-title::before {
+    content: url(question_icon38.png);
+    height: 38px;
+    width: 35px;
+    float: right;
+}
+/*without this hd will mask the problem-header*/
+.hd.hd-3.problem-header {
+    font-size: 1.44rem;
+    color: var(--color28);
+    font-weight: bold;
+}
 
 /* drag and drop title */
 
 .xblock--drag-and-drop h3.problem-title {
     font-family: "Assistant";
-    color: black;
-    font-size: 1.75rem;
+    color: var(--color28);
+    font-size: 1.44rem;
     font-weight: bold;
-    font-size: 16pt;
+}
+
+/*.ref::before {
+    font-weight: bold;
+    color: navy;
+    content: "Reference ";
+}
+*/
+
+/*<img src="/static/question_icon.png" style="height:38px; width:30px; margin-top: -44px;" />*/
+img.problem-icon {
+    content: url(question_icon.png);
+    width: 30px;
+    height: 38px;
+    /*margin-top: -64px;*/
+    margin-top: -24px;
+    cursor: pointer;
+    display: block;
+    float: right;
 }
 
 
@@ -1313,16 +1352,6 @@ sup {
 p {
     color: black;
 }
-/* guy this is quite important and somehow contained invalid properties*/
-/*.hd .hd-3 .problem-header*/
-.hd.hd-3.problem-header, h3.problem-title {
-    /*    font-size: 19.px;
-    columns: black;*/
-    font-size: 22px;
-    color: var(--color27);
-    font-weight: bold;
-    font-weight: bold;
-}
 
 
 
@@ -1827,3 +1856,7 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
     color: #dfdfdf;
 }
 /*#endregion Code Coloring Swiftly nuget*/
+/*bold links*/
+a {
+    font-weight:bold;
+}
