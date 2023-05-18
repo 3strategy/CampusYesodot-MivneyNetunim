@@ -447,9 +447,10 @@ button.submit .submit-label {
     margin-right: 2.2% !important;
 }
 
-.hd.hd-3.problem-header::before {
+.hd.hd-3.problem-header::before,
+h3.problem-header::before{
     content: url(question_icon38.png);
-    height: 38px;/*actual image size*/
+    height: 38px; /*actual image size*/
     width: 35px; /*use width to add space between image and text*/
     float: right;
 }
@@ -460,7 +461,8 @@ button.submit .submit-label {
     float: right;
 }
 /*without this hd will mask the problem-header*/
-.hd.hd-3.problem-header {
+.hd.hd-3.problem-header, 
+h3.problem-header {
     font-size: 1.44rem;
     color: var(--color28);
     font-weight: bold;
