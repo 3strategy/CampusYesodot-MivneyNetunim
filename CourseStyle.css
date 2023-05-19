@@ -4,6 +4,7 @@
 :root {
     --font1: "Varela Round";
     --font2: "Consolas";
+    --font3: "Assistant";
 }
 
 /* Color Variables */
@@ -469,7 +470,6 @@ h3.problem-header {
 }
 
 /* drag and drop title */
-
 .xblock--drag-and-drop h3.problem-title {
     font-family: "Assistant";
     color: var(--color28);
@@ -477,12 +477,6 @@ h3.problem-header {
     font-weight: bold;
 }
 
-/*.ref::before {
-    font-weight: bold;
-    color: navy;
-    content: "Reference ";
-}
-*/
 
 /*<img src="/static/question_icon.png" style="height:38px; width:30px; margin-top: -44px;" />*/
 img.problem-icon {
@@ -534,14 +528,19 @@ img.problem-icon {
 
 
 /* <label> in <problem> */
-
+/*does not seem to work*/
 .xmodule_display.xmodule_CapaModule div.problem .problem-group-label {
     font-family: "Assistant";
     font-size: 1.15rem;
     margin-bottom: 40px;
 }
-
-
+/*works on labels of text questions*/
+.xmodule_display.xmodule_ProblemBlock div.problem .problem-group-label {
+    color: var(--color28);
+    font-family: var(--font3);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
     /* <label> in <problem> */
 
     .xmodule_display.xmodule_CapaModule div.problem .problem-group-label + .question-description {
@@ -550,6 +549,15 @@ img.problem-icon {
         margin-bottom: 0 !important;
         margin-bottom: 2px !important;
     }
+/* label in problems. the title in multi question problems is 
+    tranlated to legend
+*/
+/*some problem labels appear as legend*/
+legend.field-group-hd {
+    color: var(--color28);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 
 .xmodule_display.xmodule_CapaModule div.problem .question-description {
     font-family: "Assistant";
