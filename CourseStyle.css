@@ -1680,8 +1680,7 @@ img.corner_otherlang-x:hover {
 }
 
 img.box_content_close {
-    content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/top.png);
-    width: 30px;
+    content: url(top.png);
     height: 30px;
     margin-top: 30px;
     cursor: pointer;
@@ -1690,7 +1689,7 @@ img.box_content_close {
 }
 
     img.box_content_close:hover {
-        content: url(https://s3.eu-west-1.amazonaws.com/data.cyber.org.il/virtual_courses/python/base_graphics/top-h.png);
+        content: url(top-h.png);
     }
 
 
