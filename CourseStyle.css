@@ -164,12 +164,12 @@ nav.course-navigation span.group-heading {
     color: var(--color27);
     margin-top: 3px;
     margin-bottom: 3px;
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-weight: bold;
 }
 
 .course-index .accordion .course-navigation .button-chapter .group-heading {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 131%;
 }
 
@@ -244,7 +244,7 @@ div.chapter-menu.is-open div.active p.accordion-display-name {
 }
 
 p.accordion-display-name {
-    font-family: "Assistant";
+    font-family: var(--font3);
 }
 
 .course-index .accordion .course-navigation .button-chapter.active .group-heading {
@@ -275,7 +275,7 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs {
 
 body .wrapper-course-material .course-tabs li a,
 .wrapper-course-material .course-tabs li a:visited {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 120%;
     color: white;
 }
@@ -285,12 +285,12 @@ body .wrapper-course-material .course-tabs li a,
 }
 
 .course-wrapper .course-content p {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 120%;
 }
 
 .breadcrumbs {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 111%;
 }
 
@@ -306,25 +306,25 @@ div#seq_content {
 
 h2.unit-title {
     color: var(--color27) !important;
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 2rem !important;
 }
 
 .xmodule_display.xmodule_HtmlModule h2.unit-title {
     color: var(--color27) !important;
-    font-family: "Assistant" !important;
+    font-family: var(--font3) !important;
     font-size: 1.7rem !important;
 }
 
 h2.unit-title2 {
     color: var(--color27) !important;
-    font-family: "Assistant" !important;
+    font-family: var(--font3) !important;
     font-size: 1.7rem !important;
     font-weight: 300 !important;
 }
 
 button.submit {
-    font-family: "Assistant";
+    font-family: var(--font3);
     color: white;
     background: var(--color27);
     border-radius: 5px;
@@ -367,18 +367,18 @@ div div.field {
 /*
     div.problem div.field label {
       color: white;
-      font-family: "Assistant";
+      font-family: var(--font3);
     }
       */
 
 div.problem p,
 div.problem legend,
 button.submit {
-    font-family: "Assistant";
+    font-family: var(--font3);
 }
 
 .wrapper-problem-response input {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 115%;
 }
 
@@ -409,7 +409,7 @@ button.submit .submit-label {
 .xmodule_display.xmodule_CapaModule div.problem .choicegroup label {
     /*color: white;*/
     /*background-color: #1c8da4;*/
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 115%;
     border-radius: 0px;
 }
@@ -441,7 +441,7 @@ button.submit .submit-label {
 
 /*add 38px question icon to problems*/
 .problem-header {
-    font-family: "Assistant";
+    font-family: var(--font3);
     color: var(--color28);
     font-size: 1.44rem;
     font-weight: bold;
@@ -471,7 +471,7 @@ h3.problem-header {
 
 /* drag and drop title */
 .xblock--drag-and-drop h3.problem-title {
-    font-family: "Assistant";
+    font-family: var(--font3);
     color: var(--color28);
     font-size: 1.44rem;
     font-weight: bold;
@@ -496,7 +496,7 @@ img.problem-icon {
 .xblock--drag-and-drop .btn-brand {
     border-color: var(--color27);
     border-width: 2px;
-    font-family: "Assistant";
+    font-family: var(--font3);
     color: white;
     background: #ffffff;
     border-radius: 5px;
@@ -504,7 +504,7 @@ img.problem-icon {
 }
 
 .xblock--drag-and-drop .btn-brand {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 130%;
     color: var(--color27);
 }
@@ -530,7 +530,7 @@ img.problem-icon {
 /* <label> in <problem> */
 /*does not seem to work*/
 .xmodule_display.xmodule_CapaModule div.problem .problem-group-label {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 1.15rem;
     margin-bottom: 40px;
 }
@@ -544,7 +544,7 @@ img.problem-icon {
     /* <label> in <problem> */
 
     .xmodule_display.xmodule_CapaModule div.problem .problem-group-label + .question-description {
-        font-family: "Assistant";
+        font-family: var(--font3);
         font-size: 0.9em !important;
         margin-bottom: 0 !important;
         margin-bottom: 2px !important;
@@ -560,7 +560,7 @@ legend.field-group-hd {
 }
 
 .xmodule_display.xmodule_CapaModule div.problem .question-description {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 0.9em !important;
     margin-bottom: 2px !important;
 }
@@ -596,7 +596,7 @@ legend.field-group-hd {
 /* trailing_text */
 
 .trailing_text {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 0.9rem;
     padding-top: 1.2%;
     color: #b4b2b2 !important;
@@ -651,7 +651,7 @@ legend.field-group-hd {
          ###################### */
 
 div.problem div.wrapper-problem-response p {
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 118%;
 }
 
@@ -744,7 +744,7 @@ solution > div {
 solution h3 {
     color: #fff;
     font-weight: bold;
-    font-family: "Assistant";
+    font-family: var(--font3);
     font-size: 1.2em;
     background: var(--color27);
     padding: 2px 10px 5px 10px;
@@ -787,7 +787,7 @@ solution h3 {
 
 h2.note-title {
     color: #888;
-    font-family: "Assistant" !important;
+    font-family: var(--font3) !important;
     font-size: 1.6rem;
     display: block;
     border: 1px solid;
@@ -799,7 +799,7 @@ h2.note-title {
 
 .btn.btn-link.bookmark-button {
     color: #6d878bc7;
-    font-family: "Assistant" !important;
+    font-family: var(--font3) !important;
     letter-spacing: 5px;
     letter-spacing: 1px;
     font-weight: 600
