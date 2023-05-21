@@ -22,7 +22,7 @@
     --color10: #98ddde; /* light-turquoise */
     --color11: #757575; /* grey */
     --color12: #f5f5f5; /* light grey */
-    --color13: #3B3B3B; /* dark grey */
+    --color13: #3B3B3B; /* 3B3B3B dark grey */
     /*OLD: --color14:#838484;    /* numbered lines */
     --color14: #f5f5f5; /* numbered lines */
     --color20: linear-gradient(to bottom right, #10415F, #081F2E);
@@ -31,8 +31,8 @@
     --color23: #023852; /* text       - dark blue */
     --color25: #3B364B; /*border of jumping explanation*/
     --color26: #40305F; /*backgorund of jumping explanation*/
-    --color27: #1c8da4; /* semi-light blue YESODOT/MivneyN*/
-    --color28: #00ff00; /* semi-light blue Prolems headers and titles or
+    --color27: #1c8da4; /* 1c8da4 semi-light blue YESODOT/MivneyN*/
+    --color28: #1c8da4; /* 1c8da4 semi-light blue Prolems headers and titles or
         OR, RED RED RED for Testing YESODOT/MivneyN*/
     --icon_color1: #ef7777; /* icon: debug      - red    */
     --icon_color2: #BA8900; /* icon: enrichment - yellow */
@@ -77,12 +77,24 @@ h1, h2, h3, h4, h5, h6, p, label {
 /*use h4,h5,h6 inside html block to get proper headings for the following:
     title, 
     secondary (black) title, 
-    big O notation (inversed colors), respectively 
+    big O notation (inversed colors), respectively,
+    answers, question headers. 
 */
 .xmodule_display.xmodule_HtmlBlock h4 {
     color: var(--color28);
+/*    font: var(--font3);*/
+    margin-top: 1.5rem;
     font-size: 1.1rem;
 }
+    .xmodule_display.xmodule_HtmlBlock h4.problem-header {
+        font-size: 1.62rem;
+        /*margin-right: -1rem;*/
+    }
+    .xmodule_display.xmodule_HtmlBlock h4.bigger {
+        margin-right:35px;
+        font-size: 1.54rem;
+    }
+
 .xmodule_display.xmodule_HtmlBlock h5 {
     color: var(--color1);
     font-size: 1.1rem;
@@ -467,16 +479,24 @@ button.submit .submit-label {
     color: var(--color28);
     font-size: 1.44rem;
     font-weight: bold;
-    margin-right: 2.2% !important;
+    /*margin-right: 2.2% !important;*/
 }
 
 .hd.hd-3.problem-header::before,
-h3.problem-header::before{
+h3.problem-header::before {
     content: url(question_icon38.png);
     height: 38px; /*actual image size*/
     width: 35px; /*use width to add space between image and text*/
     float: right;
 }
+h4.problem-header::before {
+    content: url(question_icon38.png);
+    margin-top:-10px;
+    height: 38px; /*actual image size*/
+    width: 35px; /*use width to add space between image and text*/
+    float: right;
+}
+
 .xblock--drag-and-drop h3.problem-title::before {
     content: url(question_icon38.png);
     height: 38px;
@@ -484,8 +504,10 @@ h3.problem-header::before{
     float: right;
 }
 /*without this hd will mask the problem-header*/
-.hd.hd-3.problem-header, 
-h3.problem-header {
+.hd.hd-3.problem-header,
+h3.problem-header,
+h4.problem-header {
+    margin-top: 1.5rem;
     font-size: 1.44rem;
     color: var(--color28);
     font-weight: bold;
@@ -587,11 +609,11 @@ legend.field-group-hd {
     margin-bottom: 2px !important;
 }
 /*new ATTEMPT TEMP ATTEMPT to catch these tags*/
-div.problem div label {
+/*div.problem div label {
     font-family: var(--font3);
     color: var(--color28);
     font-size: 1.25rem;
-}
+}*/
 /*works*/
 div.problem div description {
     font-family: var(--font3);
@@ -599,11 +621,11 @@ div.problem div description {
     font-size: 0.9rem;
 }
 /*does not yet catch anything*/
-div label.problem-group-label {
+/*div label.problem-group-label {
     font-family: var(--font3);
     color: yellow;
     font-size: 2.8rem;
-}
+}*/
 
 .option-input select {
     border: 2px solid #eee;
@@ -1888,7 +1910,7 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 
 .swiftly .line_no::before {
     content: attr(line_no);
-    color: dimgray;
+    color: white;
     font-size: 16px;
     width: 0.2em;
 }
