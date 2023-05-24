@@ -25,6 +25,8 @@
     --color13: #3B3B3B; /* 3B3B3B dark grey */
     /*OLD: --color14:#838484;    /* numbered lines */
     --color14: #f5f5f5; /* numbered lines */
+    --color15: #191B37;
+    --color16: #2F355E;
     --color20: linear-gradient(to bottom right, #10415F, #081F2E);
     --color21: #2FCFE2; /* gradient   - light blue */
     --color22: #367189; /* gradient   - dark blue */
@@ -1832,7 +1834,7 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
     background-color: #636465 !important;
     opacity: 0.9;
     font-size: 18px;
-    color: #dfdfdf;
+    color: var(--color16);
     padding: 10px;
     padding-top: 1px;
     width: 95%;
