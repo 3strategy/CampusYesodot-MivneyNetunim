@@ -1,11 +1,34 @@
-﻿<!DOCTYPE html>
+﻿<!--this is how a model option response looks like-->
+<optionresponse>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+    <label>קבעו אם שתי הטענות הן שקולות או שאינן שקולות:</label>
+    <description>בחרו את התשובה הנכונה ביותר</description>
 
-</body>
-</html>
+    <optioninput>
+
+        <option correct="True">
+            הטענות שקולות<optionhint>כל הכבוד! תשובה נכונה! הטענות שקולות כיוון שעבור כל ערך של grade אם תוצאת טענה 1 היא True גם תוצאת טענה 2 היא True</optionhint>
+        </option>
+
+        <option correct="False">
+            הטענות אינן שקולות<optionhint>תשובה לא נכונה, נסו שנית</optionhint>
+        </option>
+
+    </optioninput>
+</optionresponse>
+<demandhint>
+    <hint>You can add an optional hint like this. Problems that have a hint include a hint button, and this text appears the first time learners select the button.</hint>
+    <hint>If you add more than one hint, a different hint appears each time learners select the hint button.</hint>
+</demandhint>
+
+<!--below is a multiplechoice response BEFORE CONVERSION-->
+<multiplechoiceresponse>
+    <label>קבעו אם שתי הטענות הן שקולות או שאינן שקולות:</label>
+    <description>בחרו את התשובה הנכונה ביותר</description>
+
+    <choicegroup type="MultipleChoice">
+
+        <choice correct="true">הטענות שקולות<choicehint>כל הכבוד! תשובה נכונה! הטענות שקולות כיוון שעבור כל ערך של grade אם תוצאת טענה 1 היא True גם תוצאת טענה 2 היא True</choicehint></choice>
+        <choice correct="false">הטענות אינן שקולות<choicehint>תשובה לא נכונה, נסו שנית</choicehint></choice>
+    </choicegroup>
+</multiplechoiceresponse>
