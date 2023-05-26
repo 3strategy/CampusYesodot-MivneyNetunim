@@ -1831,10 +1831,10 @@ div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
 div.code.swiftAns pre, div.code.swiftAns pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
-    background-color: #636465 !important;
+    background-color: var(--color16) !important;
     opacity: 0.9;
     font-size: 18px;
-    color: var(--color16);
+    color: #dfdfdf;
     padding: 10px;
     padding-top: 1px;
     width: 95%;
