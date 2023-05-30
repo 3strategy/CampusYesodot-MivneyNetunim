@@ -34,7 +34,7 @@
     --color25: #3B364B; /*border of jumping explanation*/
     --color26: #40305F; /*backgorund of jumping explanation*/
     --color27: #1c8da4; /* 1c8da4 semi-light blue YESODOT/MivneyN*/
-    --color28: #1c8da4; /* 1c8da4 semi-light blue Prolems headers and titles or
+    --color28: #198094; /* 1c8da4 198094 is a darker 1c8da4 semi-light blue Prolems headers and titles or
         OR, RED RED RED for Testing YESODOT/MivneyN*/
     --icon_color1: #ef7777; /* icon: debug      - red    */
     --icon_color2: #BA8900; /* icon: enrichment - yellow */
@@ -116,6 +116,7 @@ h1, h2, h3, h4, h5, h6, p, label {
 .breadcrumbs .nav-item {
     font-family: var(--font1), Arial;
 }
+
 
 /* EDEX */
 /* don't display the unit numbrt under the tree menu on right side */
@@ -483,7 +484,24 @@ button.submit .submit-label {
     font-weight: bold;
     /*margin-right: 2.2% !important;*/
 }
+strong span {
+    border-bottom: 10px solid green;/*var(--color27);*/
+    padding-bottom: 10px;
+}
 
+/*לראשי פרקים של תרגולים, מצגות וכו*/
+strong.chapter-header {
+    font-size: 30px;
+    font-family: var(--font3);
+    font-weight:bold;
+    color: black;
+    border-bottom: 8px solid #198094;
+    padding-bottom: 1px;
+}
+strong.chapter-header::after {
+    content: "\a\a";
+    white-space: pre-wrap;
+}
 .hd.hd-3.problem-header::before,
 h3.problem-header::before {
     content: url(question_icon38.png);
@@ -1933,3 +1951,4 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 a {
     font-weight:bold;
 }
+
