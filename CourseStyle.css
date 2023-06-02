@@ -956,7 +956,7 @@ button.box_title {
     font-weight: bold;
     background-image: var(--color20);
     color: var(--color2);
-    height: 40px;
+    height: auto;
     line-height: 39px !important;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
