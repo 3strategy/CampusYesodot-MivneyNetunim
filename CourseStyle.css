@@ -1073,8 +1073,8 @@ div.code {
     border: none;
     background-color: var(--color3);
     color: var(--color2);
-    font-size: 16px; /* is overridden in lined number cases */
-    line-height: 18px;
+    /*font-size: 16px;*/ /* is overridden in lined number cases */
+    /*line-height: 18px;*/
     width: 90%; /*80%;*/
     margin: auto;
     /*margin-bottom: 30px; bad impact on inline code inside choices of answers */
@@ -1105,47 +1105,47 @@ div.problem div.code {
 
 span.code_keyword {
     color: var(--code_yellow);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_comment {
     color: var(--code_green);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_function {
     color: var(--code_pink);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_error {
     color: var(--code_red);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_builtin {
     color: var(--code_purple);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_output {
     color: var(--code_blue);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_input {
     color: var(--code_lpurple);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_marked {
     background-color: var(--code_mark);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 span.code_marked_syntax {
     background-color: var(--code_mark_syntax);
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 div.code_open {
@@ -1824,7 +1824,7 @@ div.code.swiftly pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #050505 !important; /*helps if you want to make it sticky fixedElement*/
-    font-size: 17px !important;
+    /*font-size: 17px !important;*/
     color: #dfdfdf;
     padding: 10px;
     padding-top: 1px;
@@ -1835,7 +1835,7 @@ div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: #050505 !important;
-    font-size: 17px !important;
+    /*font-size: 17px !important;*/
     color: #dfdfdf;
     border: none !important; /*to avoid conflict with coices.*/
     text-shadow: none !important;
@@ -1851,7 +1851,7 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
     font-family: monaco,Consolas,LucidaConsole,monospace;
     background-color: var(--color16) !important;
     opacity: 0.9;
-    font-size: 18px;
+    /*font-size: 18px;*/
     color: #dfdfdf;
     padding: 10px;
     padding-top: 1px;
@@ -1931,14 +1931,14 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 .swiftly .line_no::before {
     content: attr(line_no);
     color: white;
-    font-size: 16px;
+    /*font-size: 16px;*/
     width: 0.2em;
 }
 
 .swiftAns .line_no::before {
     content: attr(line_no);
     color: cadetblue;
-    font-size: 16px;
+    /*font-size: 16px;*/
     width: 0.2em;
 }
 
@@ -1952,3 +1952,20 @@ a {
     font-weight:bold;
 }
 
+@media screen and (max-width: 600px) {
+
+    .course-wrapper main, #content {
+        padding: 3px;
+    }
+
+    body {
+        font-size: 0.65rem;
+    }
+    div .problem{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    div#seq_content{
+        padding:0px;
+    }
+}
