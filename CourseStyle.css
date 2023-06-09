@@ -1861,6 +1861,9 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 .swiftly .method, .swiftAns .method {
     color: #DCDCAA;
 }
+.swiftly .blankCode, .swiftAns .blankCode {
+    background-color: gray;
+}
 
 .swiftly .class, .swiftAns .class {
     color: #4EC9B0;
@@ -1951,9 +1954,12 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 a {
     font-weight:bold;
 }
-
+div.desc_header {
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
 @media screen and (max-width: 600px) {
-
     .course-wrapper main, #content {
         padding: 3px;
     }
