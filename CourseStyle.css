@@ -598,8 +598,8 @@ img.problem-icon {
     font-size: 1.15rem;
     margin-bottom: 40px;
 }
-/*works on labels of text questions*/
-.xmodule_display.xmodule_ProblemBlock div.problem .problem-group-label {
+/*works on labels of text questions, dropdowns etc*/
+.xmodule_display.xmodule_ProblemBlock div.problem .problem-group-label, .problem label {
     color: var(--color28);
     font-family: var(--font3);
     font-size: 1.25rem;
