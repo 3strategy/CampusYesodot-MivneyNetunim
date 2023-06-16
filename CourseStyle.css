@@ -652,7 +652,7 @@ div.problem div description {
     border-radius: 4px;
     color: #555;
     padding: 5px;
-    width: 210px
+    width: auto; /*16.6.23 210px*/
 }
 
 .xmodule_display.xmodule_CapaModule div.problem div div.equation {
