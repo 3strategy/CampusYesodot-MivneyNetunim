@@ -640,6 +640,10 @@ div.problem div description {
     color: var(--color13);
     font-size: 0.9rem;
 }
+
+.question-description {
+    font-size: 1em !important; /*nothing else works*/
+}
 /*does not yet catch anything*/
 /*div label.problem-group-label {
     font-family: var(--font3);
