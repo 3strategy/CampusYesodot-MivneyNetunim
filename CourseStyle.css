@@ -1846,6 +1846,19 @@ div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
     padding: 0px !important;
 }
 
+div.code.swiftly.spacy0 pre {
+    line-height: 1.0em;
+}
+div.code.swiftly.spacy1 pre {
+    line-height: 1.8em;
+}
+div.code.swiftly.spacy2 pre {
+    line-height: 2.4em;
+}
+div.code.swiftly.spacy3 pre {
+    line-height: 3em;
+}
+
 .fixedElement .swiftly pre {
     opacity: 1;
 }
