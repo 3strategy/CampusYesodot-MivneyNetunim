@@ -293,13 +293,15 @@ p.accordion-display-name {
 /* ######################
               TOP NAVIGATION MENU
             ###################### */
-
+/*Course Banner*/
 body.view-in-course .wrapper-course-material .course-material .course-tabs {
     background-color: #f3f3f3;
     /*height: 88px;*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://courses.campus.gov.il/asset-v1:edu+EDU_matri_computer_science_partA_HE+2021_1+type@asset+block@INTRO_BASICS_1181X88_C.jpg);
+    /*background-image: url(https://courses.campus.gov.il/asset-v1:edu+EDU_matri_computer_science_partA_HE+2021_1+type@asset+block@INTRO_BASICS_1181X88_C.jpg);*/
+    /*18.6make it course specific (not refer all courses to asset in yesodot 2023 but to specific resource in the course)*/
+    background-image: url(BANNER_1181X88_C.jpg);
     /*padding-top: 40px;*/
 }
 
