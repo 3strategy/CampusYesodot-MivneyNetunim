@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 
 :root {
     --font1: "Varela Round";
     --font2: "Consolas";
     --font3: "Assistant";
+    --font4: "Alef"; /*מיועד להחלפה בכתב יד לתבניות*/
 }
 
 /* Color Variables */
@@ -1977,6 +1979,19 @@ div.desc_header {
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 0.5em;
+}
+.hw { /*for future hand writen font. currently exagerated on purpose לתבניות קוד בכתב יד*/
+    font-family: var(--font4) !important;
+    font-style: italic;
+    font-size: 1.1em !important;
+    color: red !important; /*this will be overwrittend if you enclose with a p*/
+}
+.brace { 
+    /*משמש לתבניות קוד לדימוי בלוק*/
+    display: inline-block;
+    border-right: 2px solid black;
+    margin-right: 10px;
+    padding-right: 10px;
 }
 @media screen and (max-width: 600px) {
     .course-wrapper main, #content {
