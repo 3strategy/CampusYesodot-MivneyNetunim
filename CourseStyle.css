@@ -1984,13 +1984,13 @@ div.desc_header {
     font-family: var(--font4) !important;
     font-style: italic;
     font-size: 1.1em !important;
-    color: red !important; /*this will be overwrittend if you enclose with a p*/
+    color: blue !important; /*this will be overwrittend if you enclose with a p*/
 }
 .brace { 
     /*משמש לתבניות קוד לדימוי בלוק*/
     display: inline-block;
     border-right: 2px solid black;
-    margin-right: 10px;
+    margin-right: 35px;
     padding-right: 10px;
 }
 @media screen and (max-width: 600px) {
