@@ -663,6 +663,13 @@ div.problem div description {
     width: auto; /*16.6.23 210px*/
 }
 
+tr > td > div > div.inputtype.option-input > select{
+    width:210px;
+}
+tr > td > div > div.inputtype.option-input > label {
+    text-align: right;
+}
+
 .xmodule_display.xmodule_CapaModule div.problem div div.equation {
     margin-bottom: 0;
     margin-top: 0;
