@@ -22,15 +22,15 @@
     --color8: #737495; /* light-purple */
     --color9: #4ecdc4; /* turquoise */
     --color10: #98ddde; /* light-turquoise */
-    --color11: #757575; /* grey */
+    --color11: #aEb2b6; /* DEE2E6 grey */
     --color12: #f5f5f5; /* light grey */
     --color13: #3B3B3B; /* 3B3B3B dark grey */
     /*OLD: --color14:#838484;    /* numbered lines */
     --color14: #f5f5f5; /* numbered lines */
     --color15: #191B37;
     --color16: #202546; /* פתבס */
-    --color20: linear-gradient(to bottom right, #10415F, #081F2E);
-    --color21: #2FCFE2; /* gradient   - light blue */
+    --color20: linear-gradient(to bottom right, #ade2f2, #9dd2e0); /*אקורדיון*/
+    --color21: #fafaff; /* gradient   - very light blue */
     --color22: #367189; /* gradient   - dark blue */
     --color23: #023852; /* text       - dark blue */
     --color25: #3B364B; /*border of jumping explanation*/
@@ -969,17 +969,18 @@ mark {
 button.box_title {
     font-family: var(--font1);
     font-weight: bold;
-    background-image: var(--color20);
-    color: var(--color2);
+    background-image: var(--color11);
+    color: var(--color22); /*or color 27*/
     height: auto;
     line-height: 39px !important;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    /*border-top-left-radius: 3px;
+    border-top-right-radius: 3px;*/
+    border-radius: 3px; /*radius everywhere. bottom is covered when box opens*/
     font-size: 18px;
     display: block;
     padding: 0px 10px 0px 10px;
-    border: 2px solid #092533;
-    border-bottom: none;
+    border: 1px solid var(--color11);
+    /*border-bottom: none;*/
     margin-top: 15px;
     width: 100%;
     text-align: right;
@@ -987,15 +988,20 @@ button.box_title {
     outline: none;
     text-shadow: none;
 }
-
-
-.light-button, div.history-controls input[type="submit"], a.light-button, .gray-button, input[type="reset"], input[type="submit"], input[type="button"], button, .button, form input[type="reset"], form input[type="submit"], form input[type="button"], form button, form .button, .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window, button:hover:not(:disabled) {
+    button.box_title:focus { /*successfully counter unexpected non studio behavior*/
+        border: 1px solid var(--color27);
+        outline: none;
+        box-shadow: none;
+    }
+    .light-button, div.history-controls input[type="submit"], a.light-button, .gray-button, input[type="reset"], input[type="submit"], input[type="button"], button, .button, form input[type="reset"], form input[type="submit"], form input[type="button"], form button, form .button, .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window, button:hover:not(:disabled) {
     box-shadow: none;
 }
 
-    button.box_title:hover {
-        background: var(--color22);
-    }
+        button.box_title:hover {
+            background: var(--color20);
+            color: var(--color2);
+            text-shadow: none !important;
+        }
 
 div.box_content {
     display: none;
@@ -1007,10 +1013,10 @@ div.box_content {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     border-top: 0px;
-    border-right: 2px solid #092533;
-    border-left: 2px solid #092533;
-    border-bottom: 2px solid #092533;
-    margin-top: -2px;
+    border-right: 1px solid var(--color11);
+    border-left: 1px solid var(--color11);
+    border-bottom: 1px solid var(--color11);
+    margin-top: -1px;
 }
 
 /* code design */
