@@ -1541,6 +1541,7 @@ body .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
     The stuff below is for more compatibility with sections from oter courses such as Math 371, Self etc...
     ########################################
 */
+
 /* Corner - Iquestion */
 img.corner_iquestion-icon {
     margin-right: 60px;
@@ -1833,6 +1834,29 @@ img.rolling_hangimg {
   End of self compatiblity 
   #######################
 */
+/* ___________________________________________ */
+/* ________.subtle-img-frame___________images__________________ */
+img.imgg {
+    border-radius: 15px;
+    max-width: 65%;
+}
+
+img.img20 {
+    border-radius: 15px;
+    max-width: 20rm;
+}
+/*a for auto*/
+img.imga {
+    border-radius: 15px;
+    width: auto;
+}
+/*f for float left*/
+img.imgf {
+    border-radius: 15px;
+    float: left;
+    width: auto;
+}
+
 
 /*#endregion RegionName*/
 
