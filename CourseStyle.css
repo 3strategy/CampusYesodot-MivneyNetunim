@@ -1840,12 +1840,14 @@ img.imgg {
     border-radius: 15px;
     max-width: 65%;
 }
-
-img.img20 {
-    border-radius: 15px;
-    max-width: 20rm;
+img.img40 {
+    max-width:40%;
 }
-/*a for auto*/
+
+img.img30 {
+    max-width: 30%;
+}
+/*a for auto. not in use*/
 img.imga {
     border-radius: 15px;
     width: auto;
@@ -1856,6 +1858,7 @@ img.imgf {
     float: left;
     width: auto;
 }
+
 
 
 /*#endregion RegionName*/
