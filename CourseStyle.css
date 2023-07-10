@@ -232,9 +232,9 @@ p.accordion-display-name {
 .course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item a {
     border-radius: 0;
     color: #6d878bc7 !important;
-    font-size: 1.1em !important;
+    font-size: 16.38px !important;
     padding: 0.3em !important;
-    padding-right: 2em !important;
+    padding-right: 1em !important;
 }
 
 .course-index .accordion .course-navigation .chapter-content-container .chapter-menu .menu-item:nth-child(1) a,
