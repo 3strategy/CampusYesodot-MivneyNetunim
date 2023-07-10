@@ -1847,6 +1847,14 @@ img.img40 {
 img.img30 {
     max-width: 30%;
 }
+img.img20 {
+    max-width: 20%;
+}
+img.imgc {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*a for auto. not in use*/
 img.imga {
     border-radius: 15px;
@@ -1871,7 +1879,7 @@ pre {
 div.code.swiftly pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
-    background-color: #050505 !important; /*helps if you want to make it sticky fixedElement*/
+    background-color: rgba(5,5,5,0) !important; /*helps if you want to make it sticky fixedElement*/
     /*font-size: 17px !important;*/
     color: #dfdfdf;
     padding: 10px;
@@ -1882,7 +1890,7 @@ div.code.swiftly pre .code_column {
 div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
-    background-color: #050505 !important;
+    background-color: rgba(5,5,5,0) !important;
     /*font-size: 17px !important;*/
     color: #dfdfdf;
     border: none !important; /*to avoid conflict with coices.*/
