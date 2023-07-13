@@ -86,16 +86,18 @@ h1, h2, h3, h4, h5, h6, p, label {
 */
 .xmodule_display.xmodule_HtmlBlock h4 {
     color: var(--color28);
-/*    font: var(--font3);*/
+    /*    font: var(--font3);*/
     margin-top: 1.5rem;
     font-size: 1.1rem;
 }
+
     .xmodule_display.xmodule_HtmlBlock h4.problem-header {
         font-size: 1.62rem;
         /*margin-right: -1rem;*/
     }
+
     .xmodule_display.xmodule_HtmlBlock h4.bigger {
-        margin-right:35px;
+        margin-right: 35px;
         font-size: 1.54rem;
     }
 
@@ -103,6 +105,7 @@ h1, h2, h3, h4, h5, h6, p, label {
     color: var(--color1);
     font-size: 1.1rem;
 }
+
 .xmodule_display.xmodule_HtmlBlock h6 {
     color: var(--color2);
     /*font-family: var(--font3);*/
@@ -111,6 +114,7 @@ h1, h2, h3, h4, h5, h6, p, label {
     font-size: 1rem;
     display: inline;
 }
+
 .pagination .page-divider, .view-student-notes .title-search-container .wrapper-title .page-title, .view-teams .page-header .page-title, .course-wrapper .course-content .proctored-exam-skip-confirm-wrapper .msg-title, .course-wrapper .courseware-results-wrapper .proctored-exam-skip-confirm-wrapper .msg-title, .view-teams .card .card-title, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .form-title, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-edit .form-title, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-header .title-value, .dashboard-search-results .search-info h2, .view-student-notes .placeholder-title, .course-index .accordion .course-navigation .button-chapter .group-heading, .home .page-header-secondary .last-accessed-link, div.info-wrapper section.handouts .handouts-header, .view-student-notes .note-group .course-title, .view-student-notes .note-group .tags-title, .view-teams .create-team legend, .view-teams .team-actions .title, .idash-section .message-title, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-add .form-title, .view-student-notes .wrapper-tabs .tab-list .tabs-label, .idash-section .subsection-title, .wrapper-course-material .course-tabs li a, .wrapper-course-material .course-tabs li a:visited, .xmodule_display.xmodule_VideoModule .video .video-wrapper .video-controls .control, .xmodule_display.xmodule_VideoModule .video .video-wrapper .video-controls .vcr .vidtime, .content-wrapper .course-license, .content-wrapper .xblock-license, .view-student-notes .title-search-container .wrapper-title .page-title .page-subtitle, .view-student-notes .note-group .course-subtitle, .idash-section .section-title .description, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .form-fields .label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-edit .form-fields .label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-add .form-fields .label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .form-fields .label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .form-fields .form-label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-edit .form-fields .form-label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-add .form-fields .form-label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .form-fields .form-label, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-header .group-count, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-add .message-title, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-file-upload .message-title, .nav-utilities .action-toggle-message, .view-student-notes .note-group .note .wrapper-note-excerpts .note-comments .note-comment .note-comment-title, .view-student-notes .note-group .note .reference .wrapper-reference-content .reference-title, div.info-wrapper section.updates > ol > li .date, div.info-wrapper section.updates > ol article .date, div.info-wrapper section.updates section > li .date, div.info-wrapper section.updates section article .date, div.info-wrapper section.updates div > li .date, div.info-wrapper section.updates div article .date, div.info-wrapper section.updates > ol > li .toggle-visibility-button, div.info-wrapper section.updates > ol article .toggle-visibility-button, div.info-wrapper section.updates section > li .toggle-visibility-button, div.info-wrapper section.updates section article .toggle-visibility-button, div.info-wrapper section.updates div > li .toggle-visibility-button, div.info-wrapper section.updates div article .toggle-visibility-button {
     font-family: var(--font1), Arial;
 }
@@ -488,8 +492,9 @@ button.submit .submit-label {
     font-weight: bold;
     /*margin-right: 2.2% !important;*/
 }
+
 strong span {
-    border-bottom: 10px solid green;/*var(--color27);*/
+    border-bottom: 10px solid green; /*var(--color27);*/
     padding-bottom: 10px;
 }
 
@@ -497,15 +502,17 @@ strong span {
 strong.chapter-header {
     font-size: 30px;
     font-family: var(--font3);
-    font-weight:bold;
+    font-weight: bold;
     color: black;
     border-bottom: 8px solid #198094;
     padding-bottom: 1px;
 }
-strong.chapter-header::after {
-    content: "\a\a";
-    white-space: pre-wrap;
-}
+
+    strong.chapter-header::after {
+        content: "\a\a";
+        white-space: pre-wrap;
+    }
+
 .hd.hd-3.problem-header::before,
 h3.problem-header::before {
     content: url(question_icon38.png);
@@ -513,9 +520,10 @@ h3.problem-header::before {
     width: 35px; /*use width to add space between image and text*/
     float: right;
 }
+
 h4.problem-header::before {
     content: url(question_icon38.png);
-    margin-top:-10px;
+    margin-top: -10px;
     height: 38px; /*actual image size*/
     width: 35px; /*use width to add space between image and text*/
     float: right;
@@ -609,14 +617,14 @@ img.problem-icon {
     font-size: 1.25rem;
     font-weight: bold;
 }
-    /* <label> in <problem> */
+/* <label> in <problem> */
 
-    .xmodule_display.xmodule_CapaModule div.problem .problem-group-label + .question-description {
-        font-family: var(--font3);
-        font-size: 0.9em !important;
-        margin-bottom: 0 !important;
-        margin-bottom: 2px !important;
-    }
+.xmodule_display.xmodule_CapaModule div.problem .problem-group-label + .question-description {
+    font-family: var(--font3);
+    font-size: 0.9em !important;
+    margin-bottom: 0 !important;
+    margin-bottom: 2px !important;
+}
 /* label in problems. the title in multi question problems is 
     tranlated to legend
 */
@@ -663,9 +671,10 @@ div.problem div description {
     width: auto; /*16.6.23 210px*/
 }
 
-tr > td > div > div.inputtype.option-input > select{
-    width:210px;
+tr > td > div > div.inputtype.option-input > select {
+    width: 210px;
 }
+
 tr > td > div > div.inputtype.option-input > label {
     text-align: right;
 }
@@ -988,20 +997,22 @@ button.box_title {
     outline: none;
     text-shadow: none;
 }
+
     button.box_title:focus { /*successfully counter unexpected non studio behavior*/
         border: 1px solid var(--color27);
         outline: none;
         box-shadow: none;
     }
-    .light-button, div.history-controls input[type="submit"], a.light-button, .gray-button, input[type="reset"], input[type="submit"], input[type="button"], button, .button, form input[type="reset"], form input[type="submit"], form input[type="button"], form button, form .button, .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window, button:hover:not(:disabled) {
+
+.light-button, div.history-controls input[type="submit"], a.light-button, .gray-button, input[type="reset"], input[type="submit"], input[type="button"], button, .button, form input[type="reset"], form input[type="submit"], form input[type="button"], form button, form .button, .xmodule_display.xmodule_LTIModule div.lti .wrapper-lti-link .lti-link .link_lti_new_window, button:hover:not(:disabled) {
     box-shadow: none;
 }
 
-        button.box_title:hover {
-            background: var(--color20);
-            color: var(--color2);
-            text-shadow: none !important;
-        }
+    button.box_title:hover {
+        background: var(--color20);
+        color: var(--color2);
+        text-shadow: none !important;
+    }
 
 div.box_content {
     display: none;
@@ -1103,6 +1114,7 @@ div.code {
     text-align: left;
     font-family: var(--font2);
 }
+
 div.problem div.code {
     width: auto;
 }
@@ -1840,18 +1852,21 @@ img.imgg {
     border-radius: 15px;
     max-width: 65%;
 }
+
 img.img40 {
-    max-width:40%;
+    max-width: 40%;
 }
 
 img.img30 {
     max-width: 30%;
 }
+
 img.img20 {
     max-width: 20%;
 }
+
 img.imgc {
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1903,12 +1918,15 @@ div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
 div.code.swiftly.spacy0 pre {
     line-height: 1.0em;
 }
+
 div.code.swiftly.spacy1 pre {
     line-height: 1.8em;
 }
+
 div.code.swiftly.spacy2 pre {
     line-height: 2.4em;
 }
+
 div.code.swiftly.spacy3 pre {
     line-height: 3em;
 }
@@ -1932,6 +1950,7 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 .swiftly .method, .swiftAns .method {
     color: #DCDCAA;
 }
+
 .swiftly .blankCode, .swiftAns .blankCode {
     background-color: gray;
 }
@@ -2023,20 +2042,23 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 /*#endregion Code Coloring Swiftly nuget*/
 /*bold links*/
 a {
-    font-weight:bold;
+    font-weight: bold;
 }
+
 div.desc_header {
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
+
 .hw { /*for future hand writen font. currently exagerated on purpose לתבניות קוד בכתב יד*/
     font-family: var(--font4) !important;
     font-style: italic;
     font-size: 1.1em !important;
     color: blue !important; /*this will be overwrittend if you enclose with a p*/
 }
-.brace { 
+
+.brace {
     /*משמש לתבניות קוד לדימוי בלוק*/
     display: inline-block;
     border-right: 2px solid black;
@@ -2045,9 +2067,31 @@ div.desc_header {
 }
 
 .exampdf {
-    width:100%;
-    height:1500px;
+    width: 100%;
+    height: 1500px;
 }
+
+/*tables in tests*/
+table.ttb {
+    border-collapse: collapse;
+}
+
+table.ttb tr.ttb td.ttb {
+    border: 1px solid var(--color11) !important;
+}
+
+td.ttb {
+    width: 50% !important;
+    padding:8px !important;
+}
+
+/*    td.ttb.left {  this is the default so no need.
+        text-align: left;
+    }*/
+
+    td.ttb.right {
+        text-align: right;
+    }
 
 @media screen and (max-width: 600px) {
     .course-wrapper main, #content {
@@ -2057,11 +2101,13 @@ div.desc_header {
     body {
         font-size: 0.65rem;
     }
-    div .problem{
+
+    div .problem {
         padding-right: 0px;
         padding-left: 0px;
     }
-    div#seq_content{
-        padding:0px;
+
+    div#seq_content {
+        padding: 0px;
     }
 }
