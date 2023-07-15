@@ -1912,6 +1912,14 @@ div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     padding-left: 8px;
+
+}
+
+.code.swiftly[style*="background-image"] {
+    /*for background images*/
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 div.code.swiftly.spacy0 pre {
@@ -2081,7 +2089,9 @@ table.ttb tr.ttb td.ttb {
 
 td.ttb {
     width: 50% !important;
-    padding:8px !important;
+    padding: 8px !important;
+    font-family: var(--font1);
+    font-size: 1em !important;
 }
 
 /*    td.ttb.left {  this is the default so no need.
@@ -2108,5 +2118,11 @@ td.ttb {
 
     div#seq_content {
         padding: 0px;
+    }
+
+    .code.swiftly[style*="background-image"] {
+        /*for background images*/
+        background-size: 20%;
+        /*background-position: right bottom;*/
     }
 }
