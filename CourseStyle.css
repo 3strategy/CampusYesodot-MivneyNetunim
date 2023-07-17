@@ -664,9 +664,7 @@ label > span.red{
 label > span.blue {
     color: blue;
 }
-label > span.dark {
-    background-color: black;
-}
+
 /*does not yet catch anything*/
 /*div label.problem-group-label {
     font-family: var(--font3);
