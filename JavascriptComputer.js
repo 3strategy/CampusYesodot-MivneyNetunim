@@ -104,6 +104,23 @@ function show_answer(id) {
     e.focus();
 }
 
+function openGraphPopup(imgFileName, pWidth = 200, pHeight = 100) {
+    var baseUrl = "https://courses.campus.gov.il/asset-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1+type@asset+block@";
+    //alert(".js: "+pWidth+"  "+pHeight+"  "+baseUrl+imgFileName);
+    window.open(baseUrl + imgFileName, 'popU', 'width=' + pWidth + ',height=' + pHeight); return false;
+}
+
+function openCodePopup(imgFileName, pWidth = 800, pHeight = 600) {
+    var baseUrl = window.location.origin ;
+    var path = window.location.pathname;
+    path = path.replace("courses/course-v1:", "asset-v1:");
+    path = path.substring(0, path.indexOf('/courseware'));
+    baseUrl += path + "+type@asset+block@";
+    //alert(baseUrl);
+    window.open(baseUrl + imgFileName, 'popU', 'width=' + pWidth + ',height=' + pHeight);
+    return false;
+}
+
 function daniTest() {
     alert("Dani Rubin")
 }

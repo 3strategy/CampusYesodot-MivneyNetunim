@@ -2050,7 +2050,22 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 /*bold links*/
 a {
     font-weight: bold;
+    text-decoration: underline;
 }
+/* ___________________________________________ */
+/* _____________inspired by 371 graph pop ups______Links to pop up an image of code___________ */
+.local-code-popup {
+    color: var(--color27);/*#0075b4;*/
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    float:left;
+}
+
+    .local-code-popup:hover {
+        color: var(--color22) /*#065683;*/
+    }
+/* ___________________________________________ */
 
 div.desc_header {
     font-weight: bold;
