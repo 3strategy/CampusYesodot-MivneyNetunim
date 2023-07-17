@@ -657,13 +657,22 @@ div.problem div description {
 .question-description {
     font-size: 1em !important; /*nothing else works*/
 }
+
+label > span.red{
+    color:red;
+}
+label > span.blue {
+    color: blue;
+}
+label > span.dark {
+    background-color: black;
+}
 /*does not yet catch anything*/
 /*div label.problem-group-label {
     font-family: var(--font3);
     color: yellow;
     font-size: 2.8rem;
 }*/
-
 .option-input select {
     border: 2px solid #eee;
     border-radius: 4px;
