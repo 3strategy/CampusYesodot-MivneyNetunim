@@ -1121,7 +1121,21 @@ div.code {
     font-family: var(--font2);
 }
 
-div.problem div.code {
+div.code2 {
+    border: none;
+    background-color: #fcfcfc;
+    color: var(--color1);
+    /*font-size: 16px;*/ /* is overridden in lined number cases */
+    /*line-height: 18px;*/
+    width: 90%; /*80%;*/
+    margin: auto;
+    /*margin-bottom: 30px; bad impact on inline code inside choices of answers */
+    direction: ltr;
+    text-align: left;
+    font-family: var(--font2);
+}
+
+div.problem div.code, div.problem div.code2 {
     width: auto;
 }
 
@@ -2054,6 +2068,171 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
     color: #dfdfdf;
 }
 /*#endregion Code Coloring Swiftly nuget*/
+
+button.theme-ch {
+    float:left; 
+    margin-top:-60px;
+}
+div.code2.swift2ly pre .code_column {
+    direction: ltr;
+    font-family: monaco,Consolas,LucidaConsole,monospace;
+    background-color: rgba(245,245,245,0) !important; /*helps if you want to make it sticky fixedElement*/
+    /*font-size: 17px !important;*/
+    color: #000000;
+    padding: 10px;
+    padding-top: 1px;
+    width: 95%;
+}
+
+div.code2.swift2ly pre { /*should catch code that's not in numbered lines table*/
+    direction: ltr;
+    font-family: monaco,Consolas,LucidaConsole,monospace;
+    background-color: rgba(245,245,245,0) !important;
+    /*font-size: 17px !important;*/
+    color: #000000;
+    border: none !important; /*to avoid conflict with coices.*/
+    text-shadow: none !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 8px;
+}
+
+.code2.swift2ly[style*="background-image"] {
+    /*for background images*/
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+div.code2.swift2ly.spacy0 pre {
+    line-height: 1.0em;
+}
+
+div.code2.swift2ly.spacy1 pre {
+    line-height: 1.8em;
+}
+
+div.code2.swift2ly.spacy2 pre {
+    line-height: 2.4em;
+}
+
+div.code2.swift2ly.spacy3 pre {
+    line-height: 3em;
+}
+
+.fixedElement .swift2ly pre {
+    opacity: 1;
+}
+
+div.code2.swift2Ans pre, div.code2.swift2Ans pre .code_column {
+    direction: ltr;
+    font-family: monaco,Consolas,LucidaConsole,monospace;
+    background-color: var(--color16) !important;
+    opacity: 0.9;
+    /*font-size: 18px;*/
+    color: #dfdfdf;
+    padding: 10px;
+    padding-top: 1px;
+    width: 95%;
+}
+
+
+.swift2ly .method, .swift2Ans .method {
+    color: #745342;
+}
+
+.swift2ly .blankCode, .swift2Ans .blankCode {
+    background-color: gray;
+}
+
+.swift2ly .class, .swift2Ans .class {
+    color: #2EA3CC;
+}
+
+.swift2ly .keyword, .swift2Ans .keyword {
+    color: #001BFF;
+}
+
+.swift2ly .string, .swift2Ans .string {
+    color: #A31A4E;
+}
+
+.swift2ly .numericLiteral, .swift2Ans .numericLiteral {
+    color: #b8d7a3;
+}
+
+.swift2ly .control, .swift2Ans .control {
+    color: #8F16CE;
+}
+
+.swift2ly .comment {
+    color: #008000;
+    font-family: var(--font1);
+}
+
+.swift2Ans .comment {
+    color: #009000;
+    font-family: var(--font1);
+}
+
+.swift2ly .namespace, .swift2Ans .namespace {
+    color: #dfdfdf;
+}
+
+
+.swift2ly .punctuation, .swift2Ans .punctuation {
+    color: #dfdfdf;
+}
+
+.swift2ly .operator, .swift2Ans .operator {
+    color: #dfdfdf;
+}
+
+.swift2ly .localName, .swift2Ans .localName {
+    color: #1F377F;
+}
+
+.swift2ly .parameter, .swift2Ans .parameter {
+    color: #1F377F;
+}
+
+.swift2ly .code_highlight, .swift2Ans .code_highlight {
+    background-color: #395929;
+}
+
+.swift2ly Table, .swift2Ans Table {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    white-space: pre;
+}
+
+.swift2ly Table, th, td, tr, .swift2Ans Table, th, td, tr {
+    border: none !important;
+    padding: 0px !important;
+}
+
+.swift2ly .line_no::before {
+    content: attr(line_no);
+    color: #7A7A7A;
+    /*font-size: 16px;*/
+    width: 0.2em;
+}
+
+.swift2Ans .line_no::before {
+    content: attr(line_no);
+    color: #7A7A7A;
+    /*font-size: 16px;*/
+    width: 0.2em;
+}
+
+.swift2ly .code_column, .swift2Ans .code_column {
+    padding-left: 5px;
+    color: #dfdfdf;
+}
+/*#endregion Code Coloring Swift2ly nuget*/
+
+
+
 /*bold links*/
 a {
     font-weight: bold;
@@ -2155,7 +2334,7 @@ td.ttb {
         padding: 0px;
     }
 
-    .code.swiftly[style*="background-image"] {
+    .code.swiftly[style*="background-image"], .code2.swift2ly[style*="background-image"] {
         /*for background images*/
         background-size: 20%;
         /*background-position: right bottom;*/

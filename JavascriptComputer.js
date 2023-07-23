@@ -121,6 +121,16 @@ function openCodePopup(imgFileName, pWidth = 800, pHeight = 600) {
     return false;
 }
 
+function toggleSwiftly() {
+    var list = document.querySelectorAll('div.code, div.code2');
+    for (var i = 0; di = list[i]; i++) {
+        di.classList.toggle("code");
+        di.classList.toggle("code2");
+        di.classList.toggle("swiftly");
+        di.classList.toggle("swift2ly");
+    }
+}
+
 function daniTest() {
     alert("Dani Rubin")
 }
