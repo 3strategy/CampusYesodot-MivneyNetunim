@@ -2124,6 +2124,19 @@ td.ttb {
         text-align: right;
     }
 
+.hanging1 {
+    padding-right: 1em;
+    text-indent: -1em;
+}
+.hanging2 {
+    padding-right: 2em;
+    text-indent: -2em;
+}
+.hanging3 {
+    padding-right: 3em;
+    text-indent: -3em;
+}
+
 @media screen and (max-width: 600px) {
     .course-wrapper main, #content {
         padding: 3px;
