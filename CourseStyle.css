@@ -331,8 +331,11 @@ body .wrapper-course-material .course-tabs li a,
 }
 
 .course-wrapper .course-content p {
-    font-family: var(--font3);
+    font-family: var(--font1);
     font-size: 120%;
+    line-height: 2em !important;
+    margin-top:0.4em !important;
+    margin-bottom:0.2em;
 }
 
 .breadcrumbs {
@@ -2304,17 +2307,39 @@ td.ttb {
     }
 
 .hanging1 {
-    padding-right: 1em;
-    text-indent: -1em;
+    padding-right: 1.15em;
+    text-indent: -1.15em;
 }
 .hanging2 {
-    padding-right: 2em;
-    text-indent: -2em;
+    padding-right: 2.55em;
+    text-indent: -2.55em;
 }
 .hanging3 {
-    padding-right: 3em;
-    text-indent: -3em;
+    padding-right: 3.7em;
+    text-indent: -3.7em;
 }
+
+/* טבלה למערכים המשמשת בבגרות*/
+.tbl-arr {
+    width: 30%;
+    direction: ltr;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+    .tbl-arr table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .tbl-arr td {
+        text-align: center;
+    }
+
+    .tbl-arr tr:nth-child(2) td:not(:first-child) {
+        border: 1px solid black !important;
+        font-weight: bold;
+    }
 
 @media screen and (max-width: 600px) {
     .course-wrapper main, #content {
