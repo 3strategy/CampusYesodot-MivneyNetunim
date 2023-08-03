@@ -146,7 +146,7 @@ main#main div.sequence-nav button.sequence-nav-button.button-next {
     background-color: #9dd2e0;
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav .sequence-nav-button {
+.xmodule_display.xmodule_SequenceBlock .sequence-nav .sequence-nav-button {
     border-color: #fff;
 }
 
@@ -165,7 +165,7 @@ main#main div.sequence-nav button.sequence-nav-button.button-next {
     color: #fff !important;
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav button.active {
+.xmodule_display.xmodule_SequenceBlock .sequence-nav button.active {
     background-color: #1c8da4 !important;
     border-bottom: 1px solid #fff;
 }
@@ -174,27 +174,27 @@ button.active span.icon {
     color: white;
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav button.active .icon {
+.xmodule_display.xmodule_SequenceBlock .sequence-nav button.active .icon {
     color: white;
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav ol li button .icon {
+.xmodule_display.xmodule_SequenceBlock .sequence-nav ol li button .icon {
     color: #1c8da3;
 }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav ol li {
+.xmodule_display.xmodule_SequenceBlock .sequence-nav ol li {
     /* border: 1px solid #fff !important; */
     /*  border: none !important; */
     border-color: #fff;
 }
 
-    .xmodule_display.xmodule_SequenceModule .sequence-nav ol li button {
+    .xmodule_display.xmodule_SequenceBlock .sequence-nav ol li button {
         /* border: none !important; */
         /* border: 1px solid #fff !important; */
         border-color: #fff;
     }
 
-.xmodule_display.xmodule_SequenceModule .sequence-nav .sequence-list-wrapper {
+.xmodule_display.xmodule_SequenceBlock .sequence-nav .sequence-list-wrapper {
     /*  border: 1px solid #fff; */
 }
 
@@ -1558,7 +1558,7 @@ body.view-in-course .wrapper-course-material .course-material .course-tabs li {
     padding: 0px;
 }
 
-body .xmodule_display.xmodule_SequenceModule .sequence-nav-button:hover {
+body .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover {
     color: white !important;
 }
 
@@ -2364,4 +2364,10 @@ td.ttb {
         background-size: 20%;
         /*background-position: right bottom;*/
     }
+}
+/* support floating sticky chapter tree*/
+#content > div.container > div > div {
+	display:block;
+	position: sticky;
+	top: 0;
 }
