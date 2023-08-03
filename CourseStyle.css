@@ -2307,16 +2307,16 @@ td.ttb {
     }
 
 .hanging1 {
-    padding-right: 1.15em;
-    text-indent: -1.15em;
+    padding-right: 1.4em;
+    text-indent: -1.4em;
 }
 .hanging2 {
-    padding-right: 2.55em;
-    text-indent: -2.55em;
+    padding-right: 3.1em;
+    text-indent: -3.1em;
 }
 .hanging3 {
-    padding-right: 3.7em;
-    text-indent: -3.7em;
+    padding-right: 4.5em;
+    text-indent: -4.5em;
 }
 
 /* טבלה למערכים המשמשת בבגרות*/
