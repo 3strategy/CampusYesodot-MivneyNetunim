@@ -2336,7 +2336,7 @@ td.ttb {
         text-align: center;
     }
 
-    .tbl-arr tr:nth-child(2) td:not(:first-child) {
+    .tbl-arr tr:nth-child(n+2) td:not(:first-child) {
         border: 1px solid black !important;
         font-weight: bold;
     }
