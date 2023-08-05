@@ -334,8 +334,8 @@ body .wrapper-course-material .course-tabs li a,
     font-family: var(--font1);
     font-size: 120%;
     line-height: 2em !important;
-    margin-top:0.4em !important;
-    margin-bottom:0.2em;
+    margin-top: 0.4em !important;
+    margin-bottom: 0.2em;
 }
 
 .breadcrumbs {
@@ -661,9 +661,10 @@ div.problem div description {
     font-size: 1em !important; /*nothing else works*/
 }
 
-label > span.red{
-    color:red;
+label > span.red {
+    color: red;
 }
+
 label > span.blue {
     color: blue;
 }
@@ -997,7 +998,7 @@ button.box_title {
     font-size: 18px;
     display: block;
     padding: 0px 10px 0px 10px;
-    border: 1px solid #092533;/*var(--color11) is for light accordeon*/
+    border: 1px solid #092533; /*var(--color11) is for light accordeon*/
     /*border-bottom: none;*/
     margin-top: 15px;
     width: 100%;
@@ -1007,7 +1008,7 @@ button.box_title {
     text-shadow: none;
 }
 
-    button.box_title:focus { 
+    button.box_title:focus {
         border: 2px solid var(--color27);
         /*outline: none;      for light accordeon */
         /*box-shadow: none    for light accordeon */;
@@ -1936,7 +1937,6 @@ div.code.swiftly pre { /*should catch code that's not in numbered lines table*/
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     padding-left: 8px;
-
 }
 
 .code.swiftly[style*="background-image"] {
@@ -2073,9 +2073,10 @@ div.code.swiftAns pre, div.code.swiftAns pre .code_column {
 /*#endregion Code Coloring Swiftly nuget*/
 
 button.theme-ch {
-    float:left; 
-    margin-top:-60px;
+    float: left;
+    margin-top: -60px;
 }
+
 div.code2.swift2ly pre .code_column {
     direction: ltr;
     font-family: monaco,Consolas,LucidaConsole,monospace;
@@ -2244,11 +2245,11 @@ a {
 /* ___________________________________________ */
 /* _____________inspired by 371 graph pop ups______Links to pop up an image of code___________ */
 .local-code-popup {
-    color: var(--color27);/*#0075b4;*/
+    color: var(--color27); /*#0075b4;*/
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
-    float:left;
+    float: left;
 }
 
     .local-code-popup:hover {
@@ -2287,9 +2288,9 @@ table.ttb {
     border-collapse: collapse;
 }
 
-table.ttb tr.ttb td.ttb {
-    border: 1px solid var(--color11) !important;
-}
+    table.ttb tr.ttb td.ttb {
+        border: 1px solid var(--color11) !important;
+    }
 
 td.ttb {
     width: 50% !important;
@@ -2298,7 +2299,7 @@ td.ttb {
     font-size: 1em !important;
 }
 
-/*    td.ttb.left {  this is the default so no need.
+    /*    td.ttb.left {  this is the default so no need.
         text-align: left;
     }*/
 
@@ -2307,13 +2308,21 @@ td.ttb {
     }
 
 .hanging1 {
-    padding-right: 1.4em;
-    text-indent: -1.4em;
+    padding-right: 1.2em;
 }
+
+    .hanging1 p:first-child {
+        text-indent: -1.2em;
+    }
+
 .hanging2 {
-    padding-right: 3.1em;
-    text-indent: -3.1em;
+    padding-right: 2.7em;
 }
+
+    .hanging2 p:first-child {
+        text-indent: -2.7em;
+    }
+
 .hanging3 {
     padding-right: 4.5em;
     text-indent: -4.5em;
@@ -2367,7 +2376,7 @@ td.ttb {
 }
 /* support floating sticky chapter tree*/
 #content > div.container > div > div {
-	display:block;
-	position: sticky;
-	top: 0;
+    display: block;
+    position: sticky;
+    top: 0;
 }
