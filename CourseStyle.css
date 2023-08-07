@@ -338,6 +338,14 @@ body .wrapper-course-material .course-tabs li a,
     margin-bottom: 0.2em;
 }
 
+.course-wrapper .course-content li {
+    font-family: var(--font1);
+    font-size: 120%;
+    line-height: 1.5em !important;
+    margin-top: 0.0em !important;
+    margin-bottom: 0.1em;
+}
+
 .breadcrumbs {
     font-family: var(--font3);
     font-size: 111%;
@@ -2162,7 +2170,7 @@ div.code2.swift2Ans pre, div.code2.swift2Ans pre .code_column {
 }
 
 .swift2ly .numericLiteral, .swift2Ans .numericLiteral {
-    color: #b8d7a3;
+    color: #000000;
 }
 
 .swift2ly .control, .swift2Ans .control {
