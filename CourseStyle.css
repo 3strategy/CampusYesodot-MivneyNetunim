@@ -2383,8 +2383,8 @@ td.ttb {
     }
 }
 /* support floating sticky chapter tree*/
-#content > div.container > div > div {
+/*#content > div.container > div > div {
     display: block;
     position: sticky;
     top: 0;
-}
+}*/
