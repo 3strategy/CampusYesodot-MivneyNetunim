@@ -1357,19 +1357,19 @@ td.code_line_exp { /*
     }
 
 /* table WEIRD LTR + CONSOLAS COURSE WIDE... */
-/*table {
-    font-family: var(--font2);
+table {
+    /*font-family: var(--font2);*/
     width: 100%;
     margin: auto;
     border: none;
 }
 
 td, th {
-    text-align: left;
+    /*text-align: left;*/
     padding: 3px;
     border: none;
     position: relative;
-}*/
+}
 
     td.button_side {
         width: 9%;
@@ -2305,6 +2305,7 @@ td.ttb {
     padding: 8px !important;
     font-family: var(--font1);
     font-size: 1em !important;
+    text-align: left;
 }
 
     /*    td.ttb.left {  this is the default so no need.
