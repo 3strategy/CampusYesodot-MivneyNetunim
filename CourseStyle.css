@@ -2296,11 +2296,11 @@ table.ttb {
     border-collapse: collapse;
 }
 
-    table.ttb tr.ttb td.ttb {
-        border: 1px solid var(--color11) !important;
-    }
+table.ttb, tr.ttb, td.ttb, th.ttb {
+    border: 1px solid var(--color11) !important;
+}
 
-td.ttb {
+td.ttb, th.ttb {
     width: 50% !important;
     padding: 8px !important;
     font-family: var(--font1);
@@ -2308,11 +2308,8 @@ td.ttb {
     text-align: left;
 }
 
-    /*    td.ttb.left {  this is the default so no need.
-        text-align: left;
-    }*/
 
-    td.ttb.right {
+    td.ttb.right, th.ttb.right {
         text-align: right;
     }
 
